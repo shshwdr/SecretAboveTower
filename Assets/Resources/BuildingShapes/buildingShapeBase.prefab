@@ -126,6 +126,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2591930258895684755}
+  - component: {fileID: 2162554753164779250}
   m_Layer: 0
   m_Name: buildingShapeBase
   m_TagString: Untagged
@@ -149,6 +150,23 @@ Transform:
   - {fileID: 8659664193620261374}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2162554753164779250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6126213365694040786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d5c29985a92b7345bf4c44f25dcaf59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shape: {fileID: 1842234396532591469}
+  shapeSupport: {fileID: 7274081613591516058}
+  building: {fileID: 0}
+  rows: 3
+  cols: 3
 --- !u!1 &6783644137837294656
 GameObject:
   m_ObjectHideFlags: 0
