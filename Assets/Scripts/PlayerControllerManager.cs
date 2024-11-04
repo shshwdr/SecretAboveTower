@@ -28,16 +28,18 @@ public class PlayerControllerManager : Singleton<PlayerControllerManager>
 
         
         // 自动对齐到网格位置
-        Vector2Int gridPosition = GridManager.Instance.WorldToGridPosition(mousePosition);
-        Vector3 snapPosition =  GridManager.Instance.GridToWorldPosition(gridPosition);
-        
+        // Vector2Int gridPosition = GridManager.Instance.WorldToGridPosition(mousePosition);
+        // Vector3 snapPosition =  GridManager.Instance.GridToWorldPosition(gridPosition);
+        Vector2Int buildingGridPosition = GridManager.Instance.GetBuildingGridPosition(mousePosition, currentBuilding);
+        Vector3 snapPosition = GridManager.Instance.GridToWorldPosition(buildingGridPosition);
+
         // 更新当前 Building 的位置
         currentBuilding.transform.position = snapPosition;
         // 更新当前 Building 的位置
        // currentBuilding.transform.position = mousePosition;
 
         // 检查网格状态
-        bool canPlace = GridManager.Instance.CanPlace(currentBuilding.GetComponent<Building>());
+        bool canPlace = GridManager.Instance.CanPlace(currentBuilding.GetComponent<Building>(),buildingGridPosition);
 
         if (canPlace)
         {
@@ -62,6 +64,7 @@ public class PlayerControllerManager : Singleton<PlayerControllerManager>
             {
                 // 在占用状态下或不在放置区域，取消选择并删除 Building
                 //Destroy(currentBuilding);
+                GridManager.Instance.PlaceBuilding(currentBuilding.GetComponent<Building>(),buildingGridPosition);
                 currentBuilding = null; // 取消选择
             }
         }

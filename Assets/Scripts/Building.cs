@@ -11,11 +11,14 @@ public class GridRow
         selections = new List<int>(new int[cols]); // 初始化为 0
     }
 }
+[System.Serializable]
 public class Building : MonoBehaviour
 {
     public SpriteRenderer shape;
     public SpriteRenderer shapeSupport;
     public SpriteRenderer building;
+    
+    
 
     public int rows = 3;
 
@@ -25,7 +28,7 @@ public class Building : MonoBehaviour
     private void Awake()
     {
         // 初始化选择状态
-        Init();
+        //Init();
     }
     public void Init()
     {
