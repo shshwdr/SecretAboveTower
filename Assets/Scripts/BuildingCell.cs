@@ -9,6 +9,8 @@ public class BuildingCell : MonoBehaviour, IPointerDownHandler
     public Image shape;
     public Image shapeSupport;
     public Image building;
+
+    GameObject buildingPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,15 +26,16 @@ public class BuildingCell : MonoBehaviour, IPointerDownHandler
     public void Init(Building building)
     {
         shape.sprite = building.shape.sprite;
-        shapeSupport.sprite = building.shapeSupport.sprite;
+        buildingPrefab = building.gameObject;
+        //shapeSupport.sprite = building.shapeSupport.sprite;
         //building.building.sprite = building.building.sprite;
     }
 
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        var building = Instantiate(Resources.Load<GameObject>("BuildingShapes/tree1"));
         
+        var building = Instantiate(buildingPrefab);
         PlayerControllerManager.Instance.StartDragging(building);
     }
 }

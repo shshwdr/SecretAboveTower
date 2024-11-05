@@ -8,41 +8,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1842234396532591469, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 3aa9d6363dd25bb43b927025fa93cc7d, type: 3}
-    - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
-      propertyPath: cols
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
-      propertyPath: rows
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: selections.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: selections.Array.data[0].selections.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: selections.Array.data[1].selections.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: selections.Array.data[2].selections.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
-      propertyPath: selections.Array.data[3].selections.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
-      propertyPath: selections.Array.data[4].selections.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: selections.Array.data[0].selections.Array.data[0]
@@ -66,18 +46,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: selections.Array.data[2].selections.Array.data[1]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
-      propertyPath: selections.Array.data[2].selections.Array.data[2]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
-      propertyPath: selections.Array.data[3].selections.Array.data[0]
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
-      propertyPath: selections.Array.data[4].selections.Array.data[0]
+      propertyPath: selections.Array.data[2].selections.Array.data[2]
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2591930258895684755, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
@@ -124,14 +96,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: tree1
       objectReference: {fileID: 0}
-    - target: {fileID: 6783644137837294656, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7274081613591516058, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f076ece67116d1a4abc02815086ddfcf, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -31,7 +31,8 @@ public class PlayerControllerManager : Singleton<PlayerControllerManager>
         // Vector2Int gridPosition = GridManager.Instance.WorldToGridPosition(mousePosition);
         // Vector3 snapPosition =  GridManager.Instance.GridToWorldPosition(gridPosition);
         Vector2Int buildingGridPosition = GridManager.Instance.GetBuildingGridPosition(mousePosition, currentBuilding);
-        Vector3 snapPosition = GridManager.Instance.GridToWorldPosition(buildingGridPosition);
+        var offset = GridManager.Instance.GetBuildingOffset(currentBuilding);
+        Vector3 snapPosition = GridManager.Instance.GridToWorldPosition(buildingGridPosition, currentBuilding);
 
         // 更新当前 Building 的位置
         currentBuilding.transform.position = snapPosition;

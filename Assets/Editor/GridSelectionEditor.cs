@@ -26,6 +26,11 @@ public class GridSelectionEditor : Editor
             for (int j = 0; j < gridManager.cols; j++)
             {
                 // 创建复选框
+                if (gridManager.selections.Count <= i || gridManager.selections[i].selections.Count <= j)
+                {
+                    gridManager.Init();
+                    return;
+                }
                 bool isSelected = gridManager.selections[i].selections[j] == 1;
                 bool newSelection = EditorGUILayout.Toggle(isSelected, GUILayout.Width(20));
 

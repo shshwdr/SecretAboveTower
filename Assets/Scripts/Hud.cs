@@ -10,9 +10,14 @@ public class Hud : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       var buildingCell = Instantiate(buildingCellPrefab, BottomSelectionView).GetComponent <BuildingCell>();
-       var building = Resources.Load < GameObject > ("BuildingShapes/tree1").GetComponent<Building>();
-       buildingCell.Init(building);
+
+        List<string> shapeNames = new List<string>() { "tree1", "tree2", "sail1","sail2" };
+        foreach (var name in shapeNames)
+        {
+            var buildingCell = Instantiate(buildingCellPrefab, BottomSelectionView).GetComponent <BuildingCell>();
+            var building = Resources.Load < GameObject > ("BuildingShapes/"+name).GetComponent<Building>();
+            buildingCell.Init(building);
+        }
     }
 
     // Update is called once per frame

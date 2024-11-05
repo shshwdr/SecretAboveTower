@@ -11,26 +11,26 @@ PrefabInstance:
     - target: {fileID: 1842234396532591469, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3aa9d6363dd25bb43b927025fa93cc7d, type: 3}
+      objectReference: {fileID: 21300000, guid: c91bb8a2efcefd5438005c4ce7158cb4, type: 3}
     - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: cols
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: rows
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: selections.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: selections.Array.data[0].selections.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: selections.Array.data[1].selections.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: selections.Array.data[2].selections.Array.size
@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: selections.Array.data[0].selections.Array.data[1]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: selections.Array.data[0].selections.Array.data[2]
@@ -58,6 +58,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: selections.Array.data[1].selections.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
+      propertyPath: selections.Array.data[1].selections.Array.data[1]
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
@@ -122,7 +126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6126213365694040786, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: m_Name
-      value: tree1
+      value: sail1
       objectReference: {fileID: 0}
     - target: {fileID: 6783644137837294656, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: m_IsActive
