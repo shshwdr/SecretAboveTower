@@ -1,0 +1,9 @@
+﻿identifier,time,values,testTime,testValues,type,timeMax,shouldSave,shouldResetEveryday
+Dice,7200,10,,,,,1,
+DailyChestProgress,60,10,60,10,,,1,
+treasureGoblin,86400,1,,,mapItem,,1,
+treasureChest,28800,1,,,mapItem,,1,
+MinionGachaAds,600,1,,,ads,,1,1
+SkillGachaAds,600,1,,,ads,,1,1
+EquipmentGachaAds,600,1,,,ads,,1,1
+FlyChest,200,1,120,,ads,600,,
