@@ -177,5 +177,6 @@ mousePosition.y-= height/2;
                 }
             }
         }
+        BuildingManager.Instance.AddBuilding(building);
     }
 }

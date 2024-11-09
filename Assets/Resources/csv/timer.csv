@@ -1,0 +1,5 @@
+﻿identifier,time,values,type,timeMax,shouldSave
+DrawCard,3,1,,,1
+TriggerBuilding,1,1,,,1
+ConsumeResource,3,1,mapItem,,1
+GenerateFlyingItem,3,1,mapItem,,1

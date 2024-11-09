@@ -17,18 +17,27 @@ public class Building : MonoBehaviour
     public SpriteRenderer shape;
     public SpriteRenderer shapeSupport;
     public SpriteRenderer building;
-    
+    BuildingFunctionBase function;
     
 
     public int rows = 3;
 
     public int cols = 3;
     public List<GridRow> selections;
+
+    public void Trigger()
+    {
+        function?.Trigger();
+    }
     
     private void Awake()
     {
         // 初始化选择状态
         //Init();
+        if (function == null)
+        {
+            function = GetComponent<BuildingFunctionBase>();
+        }
     }
     public void Init()
     {

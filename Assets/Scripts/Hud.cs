@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Pool;
+using TMPro;
 using UnityEngine;
 
 public class Hud : MonoBehaviour
@@ -7,6 +9,10 @@ public class Hud : MonoBehaviour
     public Transform BottomSelectionView;
 
     public GameObject buildingCellPrefab;
+
+    public TMP_Text gold;
+
+    public TMP_Text time;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +24,13 @@ public class Hud : MonoBehaviour
             var building = Resources.Load < GameObject > ("BuildingShapes/"+name).GetComponent<Building>();
             buildingCell.Init(building);
         }
+        EventPool.OptIn("DrawCardTimerTick",updateResources);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void updateResources()
     {
-        
+        gold.text = "Gold: "+ResourceManager.Instance.GetGold().ToString();
+        time.text = "Time: "+TimerManager.Instance.PlayedTime.ToString();
     }
+    
 }

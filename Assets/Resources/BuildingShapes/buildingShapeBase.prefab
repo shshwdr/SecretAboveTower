@@ -127,6 +127,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2591930258895684755}
   - component: {fileID: 2162554753164779250}
+  - component: {fileID: 8784769393273408759}
   m_Layer: 0
   m_Name: buildingShapeBase
   m_TagString: Untagged
@@ -168,6 +169,22 @@ MonoBehaviour:
   building: {fileID: 0}
   rows: 3
   cols: 3
+  selections:
+  - selections: 000000000000000000000000
+  - selections: 000000000000000000000000
+  - selections: 000000000000000000000000
+--- !u!114 &8784769393273408759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6126213365694040786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea6549a12d1cc348b88a3e036e566de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6783644137837294656
 GameObject:
   m_ObjectHideFlags: 0
