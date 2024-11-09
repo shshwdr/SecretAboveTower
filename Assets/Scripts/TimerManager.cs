@@ -46,8 +46,19 @@ public class TimerManager : Singleton<TimerManager>
     private float logTime = 1;
     private int playedTime = 0;
     public int PlayedTime => playedTime;
+    private bool isStartedGame = false;
+
+    public void StartTimers()
+    {
+        isStartedGame = true;
+        CheckAllTimerShouldStart();
+    }
     void Update()
     {
+        if (!isStartedGame)
+        {
+            return;
+        }
         logTimer += Time.deltaTime;
         if (logTimer >= logTime)
         {

@@ -9,7 +9,7 @@ public class BuildingManager : Singleton<BuildingManager> // Start is called bef
     public void AddBuilding(Building building)
     {
         
-        TimerManager.Instance.CheckAllTimerShouldStart();
+        TimerManager.Instance.StartTimers();
         buildings.Add(building);
     }
 

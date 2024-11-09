@@ -57,18 +57,16 @@ public class PlayerControllerManager : Singleton<PlayerControllerManager>
         {
             if (IsInDropArea(mousePosition) || !canPlace)
             {
-                // 在可放置区域且未被占用，固定住 Building
                // currentBuilding.GetComponent<Building>().LockBuilding();
                 Destroy(currentBuilding);
                 currentBuilding = null; // 取消选择
-                Destroy(cell);
             }
             else
             {
-                // 在占用状态下或不在放置区域，取消选择并删除 Building
                 //Destroy(currentBuilding);
                 GridManager.Instance.PlaceBuilding(currentBuilding.GetComponent<Building>(),buildingGridPosition);
                 currentBuilding = null; // 取消选择
+                Destroy(cell);
             }
         }
         

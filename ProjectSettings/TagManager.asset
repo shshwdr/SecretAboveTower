@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Tower
+    uniqueID: 2180176615
+    locked: 0
+  - name: FlyingObject
+    uniqueID: 4182863379
+    locked: 0
+  - name: Fog
+    uniqueID: 99945981
+    locked: 0
