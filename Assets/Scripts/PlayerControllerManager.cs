@@ -6,10 +6,11 @@ public class PlayerControllerManager : Singleton<PlayerControllerManager>
 {
     private GameObject currentBuilding; // 当前正在拖动的 Building
     public Transform uiDropArea; // 取消UI 放置区域
-
-    public void StartDragging(GameObject building)
+    GameObject cell;
+    public void StartDragging(GameObject building,GameObject cell)
     {
         currentBuilding = building;
+        this.cell = cell;
     }
     
     public void Update()
@@ -60,6 +61,7 @@ public class PlayerControllerManager : Singleton<PlayerControllerManager>
                // currentBuilding.GetComponent<Building>().LockBuilding();
                 Destroy(currentBuilding);
                 currentBuilding = null; // 取消选择
+                Destroy(cell);
             }
             else
             {

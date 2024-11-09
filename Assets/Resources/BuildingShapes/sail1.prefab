@@ -21,6 +21,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
+      propertyPath: identifier
+      value: hovercraft
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162554753164779250, guid: 34ec96078a1719943a0f54e6a9d76211, type: 3}
       propertyPath: selections.Array.size
       value: 2
       objectReference: {fileID: 0}

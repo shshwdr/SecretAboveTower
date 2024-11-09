@@ -20,4 +20,18 @@ public class BuildingManager : Singleton<BuildingManager> // Start is called bef
             building.Trigger();
         }
     }
+
+    public List<BuildingInfo> GetAllDrawableBuildings()
+    {
+        List<BuildingInfo> res = new List<BuildingInfo>();
+        foreach (var b in CSVLoader.Instance.buildingInfoDict.Values)
+        {
+            if (b.isReady)
+            {
+                res.Add(b);
+            }
+        }
+
+        return res;
+    }
 }

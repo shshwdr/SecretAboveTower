@@ -210,7 +210,7 @@ public class TimerManager : Singleton<TimerManager>
             switch (type)
             {
                 case TimerType.DrawCard:
-                    EventPool.Trigger("AddDrawCard");
+                    FindObjectOfType< SelectCardMenu>().Show();
                     break;
                 case TimerType.TriggerBuilding:
                     BuildingManager.Instance.TriggerAllBuildings();

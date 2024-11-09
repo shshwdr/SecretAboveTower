@@ -9,6 +9,7 @@ public class BuildingCell : MonoBehaviour, IPointerDownHandler
     public Image shape;
     public Image shapeSupport;
     public Image building;
+    public bool isDraggable = true;
 
     GameObject buildingPrefab;
     // Start is called before the first frame update
@@ -36,6 +37,6 @@ public class BuildingCell : MonoBehaviour, IPointerDownHandler
     {
         
         var building = Instantiate(buildingPrefab);
-        PlayerControllerManager.Instance.StartDragging(building);
+        PlayerControllerManager.Instance.StartDragging(building,gameObject);
     }
 }

@@ -123,15 +123,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Tower Tiles_Frame_1
     originalName: 
-    pivot: {x: 0.4914676, y: -0.43352598}
+    pivot: {x: 0.50498337, y: -0.075}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 586
-      height: 173
+      width: 602
+      height: 320
     spriteID: 47c51f29400637a4fab4becb4d234722
     spriteBone: []
     spriteOutline: []
@@ -148,8 +148,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 598
-      y: 4
+      x: 614
+      y: 191
       width: 256
       height: 155
     spriteID: 4c64068d6ce5c8142950cbf5cf38b553
@@ -160,7 +160,27 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 598, y: 4}
+    uvTransform: {x: 614, y: 191}
+  - name: Tower Tiles_Frame_2
+    originalName: 
+    pivot: {x: 0.9665653, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 614
+      y: 4
+      width: 329
+      height: 179
+    spriteID: a3c56be1fb773b744b1b0092373d8d5d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 614, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -174,10 +194,10 @@ ScriptedImporter:
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 32
-        y: 75
-        width: 586
-        height: 173
+        x: 16
+        y: 24
+        width: 602
+        height: 320
       spriteId: 47c51f29400637a4fab4becb4d234722
     - name: Tower Tiles_Frame_0
       frameIndex: 0
@@ -188,6 +208,15 @@ ScriptedImporter:
         width: 256
         height: 155
       spriteId: 4c64068d6ce5c8142950cbf5cf38b553
+    - name: Tower Tiles_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 179
+        width: 329
+        height: 179
+      spriteId: a3c56be1fb773b744b1b0092373d8d5d
     linkedCells: []
     parentIndex: -1
   platformSettings: []

@@ -3,34 +3,16 @@ using System.Collections.Generic;
 using Sinbad;
 using UnityEngine;
 
-public class CardInfo
+public class BuildingInfo
 {
     public string identifier;
     public string name;
     public bool isReady;
-    public int unlockLevel;
-    public List<string> tags;
+    public int rarity;
+    public string synergyBK;
+    public string synergyElement;
+    public string prefab;
     public string description;
-    public List<string> action1;
-    public List<string> action2;
-    public List<string> action3;
-    public List<string> action4;
-    public List<string> action5;
-    public List<string> action6;
-    public List<string> action7;
-    public List<string> action8;
-    
-    public List<List<string>> actions=>new List<List<string>>()
-    {
-        action1,action2,action3,action4,action5,action6,action7,action8
-    };
-    
-    public int gold;
-    public int cost;
-    public int power;
-    public int stay;
-    public int medal;
-    public bool isFemale;
 }
 public class TimerInfo
 {
@@ -49,18 +31,18 @@ public  class DeckInfo
 
 public class CSVLoader : Singleton<CSVLoader>
 {
-    public Dictionary<string, CardInfo> cardInfoDict = new Dictionary<string, CardInfo>();
+    public Dictionary<string, BuildingInfo> buildingInfoDict = new Dictionary<string, BuildingInfo>();
     public List<DeckInfo> deckInfos = new List<DeckInfo>();
     public Dictionary<string, TimerInfo> timerDict = new Dictionary<string, TimerInfo>();
 
     public void Init()
     {
-        // var cardInfos =
-        //     CsvUtil.LoadObjects<CardInfo>("card");
-        // foreach (var info in cardInfos)
-        // {
-        //     cardInfoDict[info.identifier] = info;
-        // }
+        var buildingInfos =
+            CsvUtil.LoadObjects<BuildingInfo>("building");
+        foreach (var info in buildingInfos)
+        {
+            buildingInfoDict[info.identifier] = info;
+        }
         // deckInfos = CsvUtil.LoadObjects<DeckInfo>("deck");
         var timerInfos = CsvUtil.LoadObjects<TimerInfo>("timer");
         foreach (var info in timerInfos)

@@ -14,6 +14,8 @@ public class GridRow
 [System.Serializable]
 public class Building : MonoBehaviour
 {
+    public string identifier;
+    public BuildingInfo info=>CSVLoader.Instance.buildingInfoDict[identifier];
     public SpriteRenderer shape;
     public SpriteRenderer shapeSupport;
     public SpriteRenderer building;
