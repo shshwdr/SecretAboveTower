@@ -6,9 +6,11 @@ public class ResourceManager : Singleton<ResourceManager>
 {
    private int gold;
 
-   public void AddGold(int amount)
+   public void AddGold(Transform transform, int amount)
    {
       gold += amount;
+      
+      ResourceCollectionManager.Instance.ShowResourceCollection(transform, ResourceType.love, amount);
    }
    public void RemoveGold(int amount)
    {
