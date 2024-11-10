@@ -123,14 +123,14 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Tower Tiles_Frame_1
     originalName: 
-    pivot: {x: 0.50498337, y: -0.075}
+    pivot: {x: 0.6923077, y: -0.025}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 4
-      width: 602
+      x: 524
+      y: 660
+      width: 416
       height: 320
     spriteID: 47c51f29400637a4fab4becb4d234722
     spriteBone: []
@@ -140,18 +140,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 524, y: 660}
   - name: Tower Tiles_Frame_0
     originalName: 
-    pivot: {x: 0.578125, y: -0.7096774}
+    pivot: {x: 0.6923077, y: -0.025}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 614
-      y: 191
-      width: 256
-      height: 155
+      x: 948
+      y: 660
+      width: 416
+      height: 320
     spriteID: 4c64068d6ce5c8142950cbf5cf38b553
     spriteBone: []
     spriteOutline: []
@@ -160,18 +160,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 614, y: 191}
+    uvTransform: {x: 948, y: 660}
   - name: Tower Tiles_Frame_2
     originalName: 
-    pivot: {x: 0.9665653, y: -1}
+    pivot: {x: 0.5625, y: -0.025}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 614
-      y: 4
-      width: 329
-      height: 179
+      x: 4
+      y: 660
+      width: 512
+      height: 320
     spriteID: a3c56be1fb773b744b1b0092373d8d5d
     spriteBone: []
     spriteOutline: []
@@ -180,7 +180,247 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 614, y: 4}
+    uvTransform: {x: 4, y: 660}
+  - name: Tower Tiles_Frame_13
+    originalName: 
+    pivot: {x: 0.954955, y: -0.6347032}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 788
+      y: 988
+      width: 333
+      height: 219
+    spriteID: 682121ca9ec8c464aab7c946113c393c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 788, y: 988}
+  - name: Tower Tiles_Frame_14
+    originalName: 
+    pivot: {x: 0.954955, y: -0.63761467}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1129
+      y: 988
+      width: 333
+      height: 218
+    spriteID: 5fd3a0cb6d6e60e41a332fa02fe8927a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1129, y: 988}
+  - name: Tower Tiles_Frame_4
+    originalName: 
+    pivot: {x: 0.50498337, y: -0.075}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1239
+      y: 332
+      width: 602
+      height: 320
+    spriteID: 55f77a333dfb0d64bbb77f21f84b0b0d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1239, y: 332}
+  - name: Tower Tiles_Frame_5
+    originalName: 
+    pivot: {x: 0.495114, y: -0.075}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1256
+      y: 4
+      width: 614
+      height: 320
+    spriteID: 9867ab3e327d1ba42975f04e319631ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1256, y: 4}
+  - name: Tower Tiles_Frame_6
+    originalName: 
+    pivot: {x: 0.49836063, y: -0.075}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 332
+      width: 610
+      height: 320
+    spriteID: 1165d341cd252c64fa610396ced351ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 332}
+  - name: Tower Tiles_Frame_7
+    originalName: 
+    pivot: {x: 0.48953298, y: -0.075}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 621
+      height: 320
+    spriteID: 2897f5c5ff2426e4b9b854ab483486e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Tower Tiles_Frame_8
+    originalName: 
+    pivot: {x: 0.49430892, y: -0.075}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 633
+      y: 4
+      width: 615
+      height: 320
+    spriteID: ab873d06205d6ce48b40f78cd690e32d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 633, y: 4}
+  - name: Tower Tiles_Frame_9
+    originalName: 
+    pivot: {x: 0.49917895, y: -0.075}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 622
+      y: 332
+      width: 609
+      height: 320
+    spriteID: 6df97eb4591a79f49abc3b528fcb4a26
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 622, y: 332}
+  - name: Tower Tiles_Frame_0
+    originalName: 
+    pivot: {x: 0.8333333, y: -0.40625003}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1372
+      y: 660
+      width: 384
+      height: 256
+    spriteID: 3958f432bac3f9645a129374f007eec4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1372, y: 660}
+  - name: Tower Tiles_Frame_1
+    originalName: 
+    pivot: {x: 0.8333333, y: -0.40625003}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 988
+      width: 384
+      height: 256
+    spriteID: 6587980e59d5bdb4d9d1391b09865ecf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 988}
+  - name: Tower Tiles_Frame_2
+    originalName: 
+    pivot: {x: 0.8333333, y: -0.40625003}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 988
+      width: 384
+      height: 256
+    spriteID: b9eae7cfd16538e40aacd54bb8928b6a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 988}
+  - name: Tower Tiles_Frame_3
+    originalName: 
+    pivot: {x: 0.578125, y: -0.7096774}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1764
+      y: 660
+      width: 256
+      height: 155
+    spriteID: f8fc86216ad84f24db5d12c20626de85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1764, y: 660}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -190,33 +430,141 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Tower Tiles_Frame_1
-      frameIndex: 1
+    - name: Tower Tiles_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 32
+        y: 8
+        width: 416
+        height: 320
+      spriteId: 47c51f29400637a4fab4becb4d234722
+    - name: Tower Tiles_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 32
+        y: 8
+        width: 416
+        height: 320
+      spriteId: 4c64068d6ce5c8142950cbf5cf38b553
+    - name: Tower Tiles_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 32
+        y: 8
+        width: 512
+        height: 320
+      spriteId: a3c56be1fb773b744b1b0092373d8d5d
+    - name: Tower Tiles_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 139
+        width: 333
+        height: 219
+      spriteId: 682121ca9ec8c464aab7c946113c393c
+    - name: Tower Tiles_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 139
+        width: 333
+        height: 218
+      spriteId: 5fd3a0cb6d6e60e41a332fa02fe8927a
+    - name: Tower Tiles_Frame_4
+      frameIndex: 4
       additiveSortOrder: 0
       cellRect:
         x: 16
         y: 24
         width: 602
         height: 320
-      spriteId: 47c51f29400637a4fab4becb4d234722
+      spriteId: 55f77a333dfb0d64bbb77f21f84b0b0d
+    - name: Tower Tiles_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 24
+        width: 614
+        height: 320
+      spriteId: 9867ab3e327d1ba42975f04e319631ca
+    - name: Tower Tiles_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 24
+        width: 610
+        height: 320
+      spriteId: 1165d341cd252c64fa610396ced351ba
+    - name: Tower Tiles_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 24
+        width: 621
+        height: 320
+      spriteId: 2897f5c5ff2426e4b9b854ab483486e2
+    - name: Tower Tiles_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 24
+        width: 615
+        height: 320
+      spriteId: ab873d06205d6ce48b40f78cd690e32d
+    - name: Tower Tiles_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 24
+        width: 609
+        height: 320
+      spriteId: 6df97eb4591a79f49abc3b528fcb4a26
     - name: Tower Tiles_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 104
+        width: 384
+        height: 256
+      spriteId: 3958f432bac3f9645a129374f007eec4
+    - name: Tower Tiles_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 104
+        width: 384
+        height: 256
+      spriteId: 6587980e59d5bdb4d9d1391b09865ecf
+    - name: Tower Tiles_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 104
+        width: 384
+        height: 256
+      spriteId: b9eae7cfd16538e40aacd54bb8928b6a
+    - name: Tower Tiles_Frame_3
+      frameIndex: 3
       additiveSortOrder: 0
       cellRect:
         x: 172
         y: 110
         width: 256
         height: 155
-      spriteId: 4c64068d6ce5c8142950cbf5cf38b553
-    - name: Tower Tiles_Frame_2
-      frameIndex: 2
-      additiveSortOrder: 0
-      cellRect:
-        x: 2
-        y: 179
-        width: 329
-        height: 179
-      spriteId: a3c56be1fb773b744b1b0092373d8d5d
+      spriteId: f8fc86216ad84f24db5d12c20626de85
     linkedCells: []
     parentIndex: -1
   platformSettings: []
