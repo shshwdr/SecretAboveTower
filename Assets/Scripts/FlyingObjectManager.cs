@@ -12,7 +12,7 @@ public class FlyingObjectManager : Singleton<FlyingObjectManager>
     void Start()
     {
         
-        FlyingObjectManager.Instance.SpawnFlyingItem();
+        //FlyingObjectManager.Instance.SpawnFlyingItem();
     }
 
     // Update is called once per frame
