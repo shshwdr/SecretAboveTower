@@ -35,6 +35,10 @@ public class BuildingCell : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (!isDraggable)
+        {
+            return;
+        }
         
         var building = Instantiate(buildingPrefab);
         PlayerControllerManager.Instance.StartDragging(building,gameObject);

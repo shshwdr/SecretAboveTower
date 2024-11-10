@@ -230,6 +230,7 @@ public class TimerManager : Singleton<TimerManager>
                     ResourceManager.Instance.RemoveGold(1);
                     break;
                 case TimerType.GenerateFlyingItem:
+                    FlyingObjectManager.Instance.SpawnFlyingItem();
                     break;
             }
                 
