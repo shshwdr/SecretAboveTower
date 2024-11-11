@@ -3,13 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class CloudManagerNew : MonoBehaviour
+public class CloudManagerNew : Singleton<CloudManagerNew>
 {
     public Sprite[] cloudSprites; // 将你的所有 sprites 加载到此数组中
     public GameObject tilePrefab;
     public Dictionary<Vector2Int, GameObject> tileMap = new Dictionary<Vector2Int, GameObject>();
     public int width, height;
     public int[,] cloudTiles;
+
+    public void RemoveCloud(Vector2Int gridPosition)
+    {
+        if (tileMap.ContainsKey(gridPosition))
+        {
+            Destroy(tileMap[gridPosition].gameObject);
+            tileMap.Remove((gridPosition));
+        }
+    }
 
     // 定义每种类型的数量
     private int[] typeCounts = {
@@ -79,9 +88,9 @@ public class CloudManagerNew : MonoBehaviour
         // // 随机生成云朵
         for (int x = 0; x < width; x++)
         {
-            for (int y = 0; y < height; y++)
+            for (int y = 2; y < height; y++)
             {
-                cloudTiles[x, y] = Random.Range(0, 2);
+                cloudTiles[x, y] = Random.Range(0, 3)>0?1:0;
             }
         }
         
@@ -377,7 +386,7 @@ public class CloudManagerNew : MonoBehaviour
 
     void CreateTile(int x, int y, Sprite sprite)
     {
-        GameObject tile = Instantiate(tilePrefab, new Vector3(x, y, 0), Quaternion.identity);
+        GameObject tile = Instantiate(tilePrefab, new Vector3(x-8, y-2, 0), Quaternion.identity);
         tileMap[new Vector2Int(x, y)] = tile;
         tile.GetComponent<SpriteRenderer>().sprite = sprite;
     }
