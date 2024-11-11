@@ -140,7 +140,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
+        y: 1248
         width: 32
         height: 32
       alignment: 0
@@ -161,7 +161,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 224
+        y: 1248
         width: 32
         height: 32
       alignment: 0
@@ -182,7 +182,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 224
+        y: 1248
         width: 32
         height: 32
       alignment: 0
@@ -203,7 +203,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 224
+        y: 1248
         width: 32
         height: 32
       alignment: 0
@@ -224,7 +224,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 224
+        y: 1248
         width: 32
         height: 32
       alignment: 0
@@ -245,7 +245,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 224
+        y: 1248
         width: 32
         height: 32
       alignment: 0
@@ -266,7 +266,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 224
+        y: 1248
         width: 32
         height: 32
       alignment: 0
@@ -287,7 +287,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 224
+        y: 1248
         width: 32
         height: 32
       alignment: 0
@@ -307,8 +307,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
+        x: 256
+        y: 1248
         width: 32
         height: 32
       alignment: 0
@@ -328,8 +328,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_9
       rect:
         serializedVersion: 2
-        x: 32
-        y: 192
+        x: 288
+        y: 1248
         width: 32
         height: 32
       alignment: 0
@@ -349,8 +349,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_10
       rect:
         serializedVersion: 2
-        x: 64
-        y: 192
+        x: 320
+        y: 1248
         width: 32
         height: 32
       alignment: 0
@@ -370,8 +370,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_11
       rect:
         serializedVersion: 2
-        x: 96
-        y: 192
+        x: 352
+        y: 1248
         width: 32
         height: 32
       alignment: 0
@@ -391,8 +391,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_12
       rect:
         serializedVersion: 2
-        x: 128
-        y: 192
+        x: 384
+        y: 1248
         width: 32
         height: 32
       alignment: 0
@@ -412,8 +412,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_13
       rect:
         serializedVersion: 2
-        x: 160
-        y: 192
+        x: 416
+        y: 1248
         width: 32
         height: 32
       alignment: 0
@@ -433,8 +433,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_14
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
+        x: 448
+        y: 1248
         width: 32
         height: 32
       alignment: 0
@@ -454,8 +454,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_15
       rect:
         serializedVersion: 2
-        x: 224
-        y: 192
+        x: 480
+        y: 1248
         width: 32
         height: 32
       alignment: 0
@@ -476,7 +476,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
+        y: 1216
         width: 32
         height: 32
       alignment: 0
@@ -497,7 +497,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 160
+        y: 1216
         width: 32
         height: 32
       alignment: 0
@@ -518,7 +518,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 160
+        y: 1216
         width: 32
         height: 32
       alignment: 0
@@ -539,7 +539,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 160
+        y: 1216
         width: 32
         height: 32
       alignment: 0
@@ -560,7 +560,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 160
+        y: 1216
         width: 32
         height: 32
       alignment: 0
@@ -581,7 +581,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 160
+        y: 1216
         width: 32
         height: 32
       alignment: 0
@@ -602,7 +602,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 160
+        y: 1216
         width: 32
         height: 32
       alignment: 0
@@ -623,7 +623,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 160
+        y: 1216
         width: 32
         height: 32
       alignment: 0
@@ -643,8 +643,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_24
       rect:
         serializedVersion: 2
-        x: 256
-        y: 160
+        x: 0
+        y: 1184
         width: 32
         height: 32
       alignment: 0
@@ -664,8 +664,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_25
       rect:
         serializedVersion: 2
-        x: 288
-        y: 160
+        x: 32
+        y: 1184
         width: 32
         height: 32
       alignment: 0
@@ -685,8 +685,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_26
       rect:
         serializedVersion: 2
-        x: 320
-        y: 160
+        x: 64
+        y: 1184
         width: 32
         height: 32
       alignment: 0
@@ -706,8 +706,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_27
       rect:
         serializedVersion: 2
-        x: 352
-        y: 160
+        x: 96
+        y: 1184
         width: 32
         height: 32
       alignment: 0
@@ -727,8 +727,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_28
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
+        x: 128
+        y: 1184
         width: 32
         height: 32
       alignment: 0
@@ -748,8 +748,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_29
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
+        x: 160
+        y: 1184
         width: 32
         height: 32
       alignment: 0
@@ -769,8 +769,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_30
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
+        x: 192
+        y: 1184
         width: 32
         height: 32
       alignment: 0
@@ -790,8 +790,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_31
       rect:
         serializedVersion: 2
-        x: 96
-        y: 128
+        x: 224
+        y: 1184
         width: 32
         height: 32
       alignment: 0
@@ -811,8 +811,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_32
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
+        x: 0
+        y: 1152
         width: 32
         height: 32
       alignment: 0
@@ -832,8 +832,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_33
       rect:
         serializedVersion: 2
-        x: 160
-        y: 128
+        x: 32
+        y: 1152
         width: 32
         height: 32
       alignment: 0
@@ -853,8 +853,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_34
       rect:
         serializedVersion: 2
-        x: 192
-        y: 128
+        x: 64
+        y: 1152
         width: 32
         height: 32
       alignment: 0
@@ -874,8 +874,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_35
       rect:
         serializedVersion: 2
-        x: 224
-        y: 128
+        x: 96
+        y: 1152
         width: 32
         height: 32
       alignment: 0
@@ -895,8 +895,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_36
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
+        x: 128
+        y: 1152
         width: 32
         height: 32
       alignment: 0
@@ -916,8 +916,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_37
       rect:
         serializedVersion: 2
-        x: 288
-        y: 128
+        x: 160
+        y: 1152
         width: 32
         height: 32
       alignment: 0
@@ -937,8 +937,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_38
       rect:
         serializedVersion: 2
-        x: 320
-        y: 128
+        x: 192
+        y: 1152
         width: 32
         height: 32
       alignment: 0
@@ -958,8 +958,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_39
       rect:
         serializedVersion: 2
-        x: 352
-        y: 128
+        x: 224
+        y: 1152
         width: 32
         height: 32
       alignment: 0
@@ -980,7 +980,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
+        y: 1120
         width: 32
         height: 32
       alignment: 0
@@ -1001,7 +1001,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 96
+        y: 1120
         width: 32
         height: 32
       alignment: 0
@@ -1022,7 +1022,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 96
+        y: 1120
         width: 32
         height: 32
       alignment: 0
@@ -1043,7 +1043,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 96
+        y: 1120
         width: 32
         height: 32
       alignment: 0
@@ -1064,7 +1064,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 96
+        y: 1120
         width: 32
         height: 32
       alignment: 0
@@ -1085,7 +1085,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 96
+        y: 1120
         width: 32
         height: 32
       alignment: 0
@@ -1106,7 +1106,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 96
+        y: 1120
         width: 32
         height: 32
       alignment: 0
@@ -1127,7 +1127,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 96
+        y: 1120
         width: 32
         height: 32
       alignment: 0
@@ -1147,8 +1147,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_48
       rect:
         serializedVersion: 2
-        x: 256
-        y: 96
+        x: 0
+        y: 1088
         width: 32
         height: 32
       alignment: 0
@@ -1168,8 +1168,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_49
       rect:
         serializedVersion: 2
-        x: 288
-        y: 96
+        x: 32
+        y: 1088
         width: 32
         height: 32
       alignment: 0
@@ -1189,8 +1189,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_50
       rect:
         serializedVersion: 2
-        x: 320
-        y: 96
+        x: 64
+        y: 1088
         width: 32
         height: 32
       alignment: 0
@@ -1210,8 +1210,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_51
       rect:
         serializedVersion: 2
-        x: 352
-        y: 96
+        x: 96
+        y: 1088
         width: 32
         height: 32
       alignment: 0
@@ -1231,8 +1231,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_52
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 128
+        y: 1088
         width: 32
         height: 32
       alignment: 0
@@ -1252,8 +1252,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_53
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 160
+        y: 1088
         width: 32
         height: 32
       alignment: 0
@@ -1273,8 +1273,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_54
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 192
+        y: 1088
         width: 32
         height: 32
       alignment: 0
@@ -1294,8 +1294,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_55
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
+        x: 224
+        y: 1088
         width: 32
         height: 32
       alignment: 0
@@ -1315,8 +1315,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_56
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
+        x: 0
+        y: 1056
         width: 32
         height: 32
       alignment: 0
@@ -1336,8 +1336,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_57
       rect:
         serializedVersion: 2
-        x: 160
-        y: 64
+        x: 32
+        y: 1056
         width: 32
         height: 32
       alignment: 0
@@ -1357,8 +1357,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_58
       rect:
         serializedVersion: 2
-        x: 192
-        y: 64
+        x: 64
+        y: 1056
         width: 32
         height: 32
       alignment: 0
@@ -1378,8 +1378,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_59
       rect:
         serializedVersion: 2
-        x: 224
-        y: 64
+        x: 96
+        y: 1056
         width: 32
         height: 32
       alignment: 0
@@ -1399,8 +1399,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_60
       rect:
         serializedVersion: 2
-        x: 256
-        y: 64
+        x: 128
+        y: 1056
         width: 32
         height: 32
       alignment: 0
@@ -1420,8 +1420,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_61
       rect:
         serializedVersion: 2
-        x: 288
-        y: 64
+        x: 160
+        y: 1056
         width: 32
         height: 32
       alignment: 0
@@ -1441,8 +1441,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_62
       rect:
         serializedVersion: 2
-        x: 320
-        y: 64
+        x: 192
+        y: 1056
         width: 32
         height: 32
       alignment: 0
@@ -1462,8 +1462,8 @@ TextureImporter:
       name: Purple_Clouds_Tileset_63
       rect:
         serializedVersion: 2
-        x: 352
-        y: 64
+        x: 224
+        y: 1056
         width: 32
         height: 32
       alignment: 0
@@ -1484,7 +1484,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
+        y: 1024
         width: 32
         height: 32
       alignment: 0
@@ -1505,7 +1505,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 32
+        y: 1024
         width: 32
         height: 32
       alignment: 0
@@ -1526,7 +1526,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 32
+        y: 1024
         width: 32
         height: 32
       alignment: 0
@@ -1547,7 +1547,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 32
+        y: 1024
         width: 32
         height: 32
       alignment: 0
@@ -1568,7 +1568,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 32
+        y: 1024
         width: 32
         height: 32
       alignment: 0
@@ -1589,7 +1589,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 32
+        y: 1024
         width: 32
         height: 32
       alignment: 0
@@ -1610,7 +1610,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 32
+        y: 1024
         width: 32
         height: 32
       alignment: 0
@@ -1631,7 +1631,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 32
+        y: 1024
         width: 32
         height: 32
       alignment: 0
@@ -1652,7 +1652,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 992
         width: 32
         height: 32
       alignment: 0
@@ -1673,7 +1673,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 992
         width: 32
         height: 32
       alignment: 0
@@ -1694,7 +1694,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 992
         width: 32
         height: 32
       alignment: 0
@@ -1715,7 +1715,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 992
         width: 32
         height: 32
       alignment: 0
@@ -1736,7 +1736,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 992
         width: 32
         height: 32
       alignment: 0
@@ -1757,7 +1757,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 992
         width: 32
         height: 32
       alignment: 0
@@ -1778,7 +1778,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 992
         width: 32
         height: 32
       alignment: 0
@@ -1799,7 +1799,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 0
+        y: 992
         width: 32
         height: 32
       alignment: 0
@@ -1811,6 +1811,3534 @@ TextureImporter:
       bones: []
       spriteID: 48f2b78465201484098294d3716777ad
       internalID: -2087101451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcfbcec6b691ab2478ee80ed92110036
+      internalID: 1201074718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_81
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e0227140bfda84080796c6b155ee31
+      internalID: 643348997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_82
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201aa7b3363d996499c1df1b75f0ba75
+      internalID: -751031205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_83
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158770cd613a1284391dc5d6ab469eca
+      internalID: 1607793622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_84
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c27f229978e24428651e7d3ed04191
+      internalID: 726588541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_85
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0bbfafb8cd87b4c861089f58d8d947
+      internalID: 1397383139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_86
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a55955162005c4dbd1c2b7bf02f0ce
+      internalID: 1096136352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_87
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28da2fe436e8cd4dac763978d8d7dbe
+      internalID: -185470119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cec84e001cd0574b948fa66bed73388
+      internalID: 384914030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_89
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6800d3b9277f249b04519e09838fb4
+      internalID: -171280524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_90
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88787afa21619148a1eaebc62dcb39b
+      internalID: 1549789669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_91
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27d8b7e97b762141bf863087398863f
+      internalID: -1500397539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_92
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba23011e53004d419953d3f380e4660
+      internalID: -1877069481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_93
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92b8bb00e583584b9096b314d4e9f69
+      internalID: 1843279375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_94
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c025c1594fed84eb944cbd362f7ab1
+      internalID: -1098614907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_95
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a845faf951045489872b98c6636f0e
+      internalID: -2115485992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2225b333566d6934d9689134d74d28ea
+      internalID: -1703622773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_97
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276a00b8895b6c345aa8edb6511f15eb
+      internalID: 1814970582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_98
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94737fffd37a8c4fb9fca11cd7f2fff
+      internalID: -367931793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_99
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6d29167822b4a4897c7296a53e6301
+      internalID: -1511790340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_100
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f519eccc2bbcccc4a9a46c4c55446fbd
+      internalID: -1317449250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_101
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50817f6b4a1e8a94aa12532fe6bafc56
+      internalID: 1681970017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_102
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad71e23148744af40922d7195027fa81
+      internalID: -1667014733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_103
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075ef87a1b3e21a4d8aa33e9a5afbebf
+      internalID: -2092098982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dcbe86f6587188418169406e0002e20
+      internalID: -1764563237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_106
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 864
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5c4ef66c2c3754fbe1d78fe922a42a
+      internalID: -983597464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_107
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 864
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157b22e0df06e564198494cb19085f1b
+      internalID: 2090464172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_108
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 864
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90edccf9c4a559842b45c4896cb7a732
+      internalID: 644143661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_109
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e2439b7e044fe4ea366c204a84b10d
+      internalID: 1203269402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_110
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 832
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f39297a65d99f1429dbfafeb6f9e91c
+      internalID: 314512979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_111
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 832
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4b1be7e7ca96e4aa1f409c5c381a0b
+      internalID: 2065829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_112
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 832
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae069e5b64c33294594976dd0d8cadfe
+      internalID: 1646312349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_113
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526aaff0b7e309446905b6bf448728b3
+      internalID: 1328591024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_114
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 800
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d7a76acf735c404db709d350870e336
+      internalID: 1111082576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_115
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 800
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11945117e78dfe841945132acfa5e257
+      internalID: -679270878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_116
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 800
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6684f019cba694692a7eda78dc3701
+      internalID: 1582695164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6786465566d7157438027fd75bd5a40e
+      internalID: -2043496246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_118
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 768
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df21bc125e7b9741a6718b157889a13
+      internalID: -1683672980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_119
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 768
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e1bfb780c08c7409b544916ff17b05
+      internalID: -1267044286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_120
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 768
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4465355521315cf4787289402ea2de66
+      internalID: -217633289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_121
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 736
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1cad9b9094b81468f2abf788d4b914
+      internalID: 908076302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_122
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 736
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf8cc385c4b6924eb2d7f527444bbb3
+      internalID: 1725437462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_123
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 736
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed7cb994d17ac7479bfe04271b5f729
+      internalID: 1825937757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_124
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 736
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680476e468d3c7a41a24789c91a630a0
+      internalID: 400189164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_125
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4701967472714fb4a857d717a51746c0
+      internalID: 1179876307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_126
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 704
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3700b5005811540a4478e1f1523a17
+      internalID: 1376738199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_127
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 704
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd69cf72ddcc89f44bfa933a44f1ccfd
+      internalID: 1655601073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_128
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 704
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd0353a814ef32438cdec45787877bf
+      internalID: -1662599905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_129
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a7fb9f3b32b0f40a4b1a9a546fa2f4
+      internalID: -1225964818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_130
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 672
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ff8e334be1ea742966cea26c749223
+      internalID: 1856333804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_131
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 672
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8799f1662346b444593ee57bfa5d568f
+      internalID: 1706284900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_132
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 672
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea34b86e22e2ea41aa2c9a218ccdc7b
+      internalID: -602706191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_133
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f5fc7b166a7a84392afa3feb2556ba
+      internalID: -118607558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_134
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dbfc970eb494c44dbb28e2fb2370b28
+      internalID: -1472056317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_135
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ba092de0ffb214996d72ce33a4a8ea
+      internalID: 787691111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_136
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e28fb5ee0080ed4f9545fd9b9ad1581
+      internalID: 557526564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_137
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a183d176a2ee6ac4890dfea67efdf989
+      internalID: -1063315097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_138
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5885238c346f64f9e1339e04d1eb5f
+      internalID: 1747791166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_139
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28233ae659c30ec4e8e335a8be3da401
+      internalID: -801660414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_140
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a45615e08ba5b740971c8ffbc337773
+      internalID: -2065355771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_141
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59778e6a85ba11d4b991930f015c1694
+      internalID: -1193708090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_142
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175d49743cd36084294a125df85fa50b
+      internalID: 422474859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_143
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d18451f580a625419349d2713185dc2
+      internalID: -674549654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_144
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee8a4d18fbdb5b4682fa86875f74cd7
+      internalID: 1096966652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_145
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cffb865c40311847808b93f212e0023
+      internalID: -2087832806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_146
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a63cbd9e51cb274f9b961136de05c92
+      internalID: -591907045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_147
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b1cd77f3f208344b58a77a65f7a2c6
+      internalID: 782669415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_148
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f32ef968a4ce8b42a69809f9f2de4c2
+      internalID: -741290408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_149
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558f54c0fcd76104ab0c5a6eb6f420ab
+      internalID: -1605433753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_150
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c5f73250264d04c84ac1b896b31d17
+      internalID: -256821623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_151
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2323dfa0a0c2d4f8b05eeb64c39598
+      internalID: 700498847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_152
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0813e86f091824aa6641e2444043e0
+      internalID: 1314351404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_153
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56e1184928314a419177d3dac24c376
+      internalID: -444842148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_154
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29da572fd955b04d8096b961c41c85a
+      internalID: -817437351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_155
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8abbfeadaf46564b9cc90a6b39e1efd
+      internalID: -1613590635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_156
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6b612ec635c9345b62f9c06aca63b6
+      internalID: -65492699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_157
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8034487a2d75f6a4ea8197daa0e9f018
+      internalID: 2004176678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_158
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61671d6d5c3ddb14db64d26a6b44c411
+      internalID: 1357771788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_159
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5883913e03a259544b7d176d8899ee5c
+      internalID: -1909335555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_160
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccba2f5badc4f4545abf6971692f4160
+      internalID: 1375850617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_161
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad4e30600a4d14429223034c6bf3b91
+      internalID: 826665715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_162
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae29613d91ee4f48bb9c6b35c872697
+      internalID: 1697581160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_163
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ad12b75eeabb84b984c364c80afbf8
+      internalID: -1577071943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_164
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d84debc6c20634f97e490e837d4b18
+      internalID: 1390550314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_165
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e81a07589012046bb10df2d2ff48a5
+      internalID: -1697391183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_166
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8579600f8c7f562469adc5b45c53298b
+      internalID: 731337195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_167
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e50a344266ba0c4186da4c136543009
+      internalID: 1288965335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_168
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cddf1e9e3010a3744a35d34f1361f60d
+      internalID: 1932529706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_169
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b167036251e357e479f8c72205f5e3a3
+      internalID: 1950865409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_170
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27fcc0bfad152da40bec7491ba5be80a
+      internalID: 984872267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_171
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499abfa47c15949439d0626299f0b694
+      internalID: -747430531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_172
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1373f5378a41e84a9b143ee524f32fb
+      internalID: -798309746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_173
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec0ed7ca3556d341a96226866055a60
+      internalID: 375827712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_174
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2016fe99efce3934fb83a4b944082342
+      internalID: -1564855317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_175
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e17c27849c5a84499d7e554d824dbc
+      internalID: 669907329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_176
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba2923d3cc77f24ebf4bd1503cf0ddd
+      internalID: 1513780261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_177
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e31e16863e493479b5005bac10e695
+      internalID: -2040539242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_178
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb3e654c8833f14094f1bc19fd9d4ee
+      internalID: -366459926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_179
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d855cf574f5c9eb43ae981bc5c0ebd38
+      internalID: 786277911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_180
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e60864325acd20f418c0128def839e75
+      internalID: -762835616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_181
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7329bb58c196142a7f904464ad9aeb
+      internalID: -1067653531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_182
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f601ec766530814d972b5705997bf76
+      internalID: -1144121302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_183
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0a85b86245687419e3216e759063b6
+      internalID: -2080921249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_184
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e486ccf8495104a4d91005d5d47dc050
+      internalID: 1468802038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_185
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7710b428005aaae4884b36c16853cb27
+      internalID: -505478051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_186
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86800ff071ab8b74a8cdd6f7d6aeeefc
+      internalID: 345908456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_187
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6c5e12ae3ac5e4b96bd718f6911f46
+      internalID: 1748854837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_188
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f058d0d153f0c46afc75ce503c1e95
+      internalID: -522457535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_189
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb43667785185841908961bac4eab3f
+      internalID: 1679640527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_190
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e019c461beabeb4c93b28ef5a5d5a13
+      internalID: 1881428904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_191
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5258227e784db4090e5e86be51188e
+      internalID: 2025366996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_192
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edecb0350e22513408860bdf2715b50d
+      internalID: 193188708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_193
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c9a99ebf65efb45849e974a8d5eb8c
+      internalID: 340920899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_194
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e6396cc76ef9647a59b6cdc5787f91
+      internalID: 1389313055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_195
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64eff219795d3b4aa7dd564e1163be3
+      internalID: -1670852410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_196
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2f4389100941742a43b45f8419041d
+      internalID: -751681506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_197
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660219d99866eff43a0831520ba8fdd9
+      internalID: -1567969080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_198
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113b96a07d9a1294dafcab832a4f7b21
+      internalID: -1558665023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_199
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d559db13e9dbbc243aee0d187f36da61
+      internalID: 668691343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_200
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e416261035b9a7c4693f0f7cf60d8df3
+      internalID: -559970588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_201
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed3897bd1e40524c87f2bdf40bdc5b5
+      internalID: 1690574369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_202
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed8cec5a19e3e549a89d77c241ca95f
+      internalID: -1098890926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_203
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b38d7b8bfabdc4784e1c1ec752b28a
+      internalID: 489368083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_204
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1492db8850ef0a4eb38e1ded72f351f
+      internalID: 1615026033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_205
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d6d1bcfd247d346b9e30a1f745f7f5
+      internalID: -590872559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_206
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92b7e883a63e9d4eb7025fd393f44bd
+      internalID: 1653895653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_207
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d1cb46b3b0c7a40852cb706f587d2d
+      internalID: 489029907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_208
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87f295126587164592e4a479610d5e3
+      internalID: 223693684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_209
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f891d425c2d9247afff7cd27f16187
+      internalID: 970351641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_210
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec47c69d5e0f5947a0415d10062c9c5
+      internalID: 1295549129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_211
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8b9bf5b49973d4e930c3231e8ff427
+      internalID: 766934727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_212
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26daf9c36d5b5f044888ab6a1e1eae49
+      internalID: -867534919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_213
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6627223c192eb5c479d2a9e52c52de19
+      internalID: 103414934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_214
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303206b215bb8d446a79518fba679d35
+      internalID: -1315424685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_215
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef77cfc18abaa4c4dba17115ab8e42f0
+      internalID: 489495029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_216
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d37a5d6276371449bcb81096be8f59
+      internalID: 1409361455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_217
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83178badf61a44247b6fe4acb40730cc
+      internalID: -1690106105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_218
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa7053c3530be945984e18a46b92728
+      internalID: -575868698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_219
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57cd013512d674d4ebc403fcfc833c95
+      internalID: -376182503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_220
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c75ca1a26f9fd4baff7ba716e33035
+      internalID: -285365790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_221
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ee2060df081db45ac1cfc99faf5106
+      internalID: 1142457744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_222
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6144226a1025e7c47a079906b95df6c5
+      internalID: -455307585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_223
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef4408236f82f2a42bf3b8a2b4260177
+      internalID: 1322620849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_224
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a70e2ccd5243d458751e936cff8eb1
+      internalID: -1389307083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_225
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bf44736e6ec3044b965473928d3e71
+      internalID: 343714472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_226
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e188c43c5b2063e418607af82e162e09
+      internalID: -1928734596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_227
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d77216d70b9b348bbc4d0726d5b2d7
+      internalID: 59633888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_228
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0911d3ef612c7498585bf0e7819e35
+      internalID: 4022679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_229
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d99dd7ba31375f49bd614a7c06dfb68
+      internalID: -790190766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_230
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdbb55b284c83941b1336f2d24050b3
+      internalID: 1355520510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_231
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1aa0d933be18d48a4d8d45a1c79af0
+      internalID: 387877065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_232
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45deb8b8f4b9338468d0bc92fc3b2563
+      internalID: 1602937786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_233
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10aa0d7274f01794bbd40912e2696a3e
+      internalID: 1041583115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_234
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a64a38f5f5fb24eae283f9a34e5fcf
+      internalID: 837013101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_235
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7761652991a3e0a4b8c0d06d4ffac291
+      internalID: 1450223897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_236
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1308218eefae86a4f9aa6faa79edc7b9
+      internalID: -2116719793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_237
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890be2246a89fe243876f73adb82bbd3
+      internalID: -1540818564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_238
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e704073165ad92d45b9b2eaec32faf4d
+      internalID: -1371677251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_239
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f1b323c5dcd964981e0a4f7d636eb5
+      internalID: -153371328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_240
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d446060ebd244f438515f904d6497a5
+      internalID: -2051530472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_241
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea1455e9dd3dd74b956e2bdfceeb88d
+      internalID: -1863720926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_242
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3177ea15544ef4abcf8adafe12f1a1
+      internalID: 1275738827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_243
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d3e67350ba7c048baee87369a20a7f
+      internalID: -530870181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_244
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f56d69097b6b7843ad040ce48cd0682
+      internalID: 387423087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_245
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801ad715ec04f44438f21453d32c267c
+      internalID: 340436660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_246
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd4360e0c2318d478c58b7e362d409d
+      internalID: 1213485433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_247
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb9a67c1dde9ec4799dc8fe9e7d5d89
+      internalID: 344939393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Clouds_Tileset_248
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cb556bdf8e8804d8260888b67b0c25
+      internalID: 233649468
       vertices: []
       indices: 
       edges: []
@@ -1829,21 +5357,170 @@ TextureImporter:
       Purple_Clouds_Tileset_0: 1662892653
       Purple_Clouds_Tileset_1: -461603619
       Purple_Clouds_Tileset_10: -379960827
+      Purple_Clouds_Tileset_100: -1317449250
+      Purple_Clouds_Tileset_101: 1681970017
+      Purple_Clouds_Tileset_102: -1667014733
+      Purple_Clouds_Tileset_103: -2092098982
+      Purple_Clouds_Tileset_104: -477675932
+      Purple_Clouds_Tileset_105: -1764563237
+      Purple_Clouds_Tileset_106: -983597464
+      Purple_Clouds_Tileset_107: 2090464172
+      Purple_Clouds_Tileset_108: 644143661
+      Purple_Clouds_Tileset_109: 1203269402
       Purple_Clouds_Tileset_11: -1572138193
+      Purple_Clouds_Tileset_110: 314512979
+      Purple_Clouds_Tileset_111: 2065829
+      Purple_Clouds_Tileset_112: 1646312349
+      Purple_Clouds_Tileset_113: 1328591024
+      Purple_Clouds_Tileset_114: 1111082576
+      Purple_Clouds_Tileset_115: -679270878
+      Purple_Clouds_Tileset_116: 1582695164
+      Purple_Clouds_Tileset_117: -2043496246
+      Purple_Clouds_Tileset_118: -1683672980
+      Purple_Clouds_Tileset_119: -1267044286
       Purple_Clouds_Tileset_12: 60071877
+      Purple_Clouds_Tileset_120: -217633289
+      Purple_Clouds_Tileset_121: 908076302
+      Purple_Clouds_Tileset_122: 1725437462
+      Purple_Clouds_Tileset_123: 1825937757
+      Purple_Clouds_Tileset_124: 400189164
+      Purple_Clouds_Tileset_125: 1179876307
+      Purple_Clouds_Tileset_126: 1376738199
+      Purple_Clouds_Tileset_127: 1655601073
+      Purple_Clouds_Tileset_128: -1662599905
+      Purple_Clouds_Tileset_129: -1225964818
       Purple_Clouds_Tileset_13: -817648949
+      Purple_Clouds_Tileset_130: 1856333804
+      Purple_Clouds_Tileset_131: 1706284900
+      Purple_Clouds_Tileset_132: -602706191
+      Purple_Clouds_Tileset_133: -118607558
+      Purple_Clouds_Tileset_134: -1472056317
+      Purple_Clouds_Tileset_135: 787691111
+      Purple_Clouds_Tileset_136: 557526564
+      Purple_Clouds_Tileset_137: -1063315097
+      Purple_Clouds_Tileset_138: 1747791166
+      Purple_Clouds_Tileset_139: -801660414
       Purple_Clouds_Tileset_14: -1611176439
+      Purple_Clouds_Tileset_140: -2065355771
+      Purple_Clouds_Tileset_141: -1193708090
+      Purple_Clouds_Tileset_142: 422474859
+      Purple_Clouds_Tileset_143: -674549654
+      Purple_Clouds_Tileset_144: 1096966652
+      Purple_Clouds_Tileset_145: -2087832806
+      Purple_Clouds_Tileset_146: -591907045
+      Purple_Clouds_Tileset_147: 782669415
+      Purple_Clouds_Tileset_148: -741290408
+      Purple_Clouds_Tileset_149: -1605433753
       Purple_Clouds_Tileset_15: 542418618
+      Purple_Clouds_Tileset_150: -256821623
+      Purple_Clouds_Tileset_151: 700498847
+      Purple_Clouds_Tileset_152: 1314351404
+      Purple_Clouds_Tileset_153: -444842148
+      Purple_Clouds_Tileset_154: -817437351
+      Purple_Clouds_Tileset_155: -1613590635
+      Purple_Clouds_Tileset_156: -65492699
+      Purple_Clouds_Tileset_157: 2004176678
+      Purple_Clouds_Tileset_158: 1357771788
+      Purple_Clouds_Tileset_159: -1909335555
       Purple_Clouds_Tileset_16: -1325028854
+      Purple_Clouds_Tileset_160: 1375850617
+      Purple_Clouds_Tileset_161: 826665715
+      Purple_Clouds_Tileset_162: 1697581160
+      Purple_Clouds_Tileset_163: -1577071943
+      Purple_Clouds_Tileset_164: 1390550314
+      Purple_Clouds_Tileset_165: -1697391183
+      Purple_Clouds_Tileset_166: 731337195
+      Purple_Clouds_Tileset_167: 1288965335
+      Purple_Clouds_Tileset_168: 1932529706
+      Purple_Clouds_Tileset_169: 1950865409
       Purple_Clouds_Tileset_17: 345750802
+      Purple_Clouds_Tileset_170: 984872267
+      Purple_Clouds_Tileset_171: -747430531
+      Purple_Clouds_Tileset_172: -798309746
+      Purple_Clouds_Tileset_173: 375827712
+      Purple_Clouds_Tileset_174: -1564855317
+      Purple_Clouds_Tileset_175: 669907329
+      Purple_Clouds_Tileset_176: 1513780261
+      Purple_Clouds_Tileset_177: -2040539242
+      Purple_Clouds_Tileset_178: -366459926
+      Purple_Clouds_Tileset_179: 786277911
       Purple_Clouds_Tileset_18: -1964605413
+      Purple_Clouds_Tileset_180: -762835616
+      Purple_Clouds_Tileset_181: -1067653531
+      Purple_Clouds_Tileset_182: -1144121302
+      Purple_Clouds_Tileset_183: -2080921249
+      Purple_Clouds_Tileset_184: 1468802038
+      Purple_Clouds_Tileset_185: -505478051
+      Purple_Clouds_Tileset_186: 345908456
+      Purple_Clouds_Tileset_187: 1748854837
+      Purple_Clouds_Tileset_188: -522457535
+      Purple_Clouds_Tileset_189: 1679640527
       Purple_Clouds_Tileset_19: 13917198
+      Purple_Clouds_Tileset_190: 1881428904
+      Purple_Clouds_Tileset_191: 2025366996
+      Purple_Clouds_Tileset_192: 193188708
+      Purple_Clouds_Tileset_193: 340920899
+      Purple_Clouds_Tileset_194: 1389313055
+      Purple_Clouds_Tileset_195: -1670852410
+      Purple_Clouds_Tileset_196: -751681506
+      Purple_Clouds_Tileset_197: -1567969080
+      Purple_Clouds_Tileset_198: -1558665023
+      Purple_Clouds_Tileset_199: 668691343
       Purple_Clouds_Tileset_2: -313243625
       Purple_Clouds_Tileset_20: -306461041
+      Purple_Clouds_Tileset_200: -559970588
+      Purple_Clouds_Tileset_201: 1690574369
+      Purple_Clouds_Tileset_202: -1098890926
+      Purple_Clouds_Tileset_203: 489368083
+      Purple_Clouds_Tileset_204: 1615026033
+      Purple_Clouds_Tileset_205: -590872559
+      Purple_Clouds_Tileset_206: 1653895653
+      Purple_Clouds_Tileset_207: 489029907
+      Purple_Clouds_Tileset_208: 223693684
+      Purple_Clouds_Tileset_209: 970351641
       Purple_Clouds_Tileset_21: 165600388
+      Purple_Clouds_Tileset_210: 1295549129
+      Purple_Clouds_Tileset_211: 766934727
+      Purple_Clouds_Tileset_212: -867534919
+      Purple_Clouds_Tileset_213: 103414934
+      Purple_Clouds_Tileset_214: -1315424685
+      Purple_Clouds_Tileset_215: 489495029
+      Purple_Clouds_Tileset_216: 1409361455
+      Purple_Clouds_Tileset_217: -1690106105
+      Purple_Clouds_Tileset_218: -575868698
+      Purple_Clouds_Tileset_219: -376182503
       Purple_Clouds_Tileset_22: 1111268262
+      Purple_Clouds_Tileset_220: -285365790
+      Purple_Clouds_Tileset_221: 1142457744
+      Purple_Clouds_Tileset_222: -455307585
+      Purple_Clouds_Tileset_223: 1322620849
+      Purple_Clouds_Tileset_224: -1389307083
+      Purple_Clouds_Tileset_225: 343714472
+      Purple_Clouds_Tileset_226: -1928734596
+      Purple_Clouds_Tileset_227: 59633888
+      Purple_Clouds_Tileset_228: 4022679
+      Purple_Clouds_Tileset_229: -790190766
       Purple_Clouds_Tileset_23: 1314965733
+      Purple_Clouds_Tileset_230: 1355520510
+      Purple_Clouds_Tileset_231: 387877065
+      Purple_Clouds_Tileset_232: 1602937786
+      Purple_Clouds_Tileset_233: 1041583115
+      Purple_Clouds_Tileset_234: 837013101
+      Purple_Clouds_Tileset_235: 1450223897
+      Purple_Clouds_Tileset_236: -2116719793
+      Purple_Clouds_Tileset_237: -1540818564
+      Purple_Clouds_Tileset_238: -1371677251
+      Purple_Clouds_Tileset_239: -153371328
       Purple_Clouds_Tileset_24: 643680198
+      Purple_Clouds_Tileset_240: -2051530472
+      Purple_Clouds_Tileset_241: -1863720926
+      Purple_Clouds_Tileset_242: 1275738827
+      Purple_Clouds_Tileset_243: -530870181
+      Purple_Clouds_Tileset_244: 387423087
+      Purple_Clouds_Tileset_245: 340436660
+      Purple_Clouds_Tileset_246: 1213485433
+      Purple_Clouds_Tileset_247: 344939393
+      Purple_Clouds_Tileset_248: 233649468
       Purple_Clouds_Tileset_25: -509383589
       Purple_Clouds_Tileset_26: -950779373
       Purple_Clouds_Tileset_27: -945768430
@@ -1905,7 +5582,27 @@ TextureImporter:
       Purple_Clouds_Tileset_78: 2106273031
       Purple_Clouds_Tileset_79: -2087101451
       Purple_Clouds_Tileset_8: -442884700
+      Purple_Clouds_Tileset_80: 1201074718
+      Purple_Clouds_Tileset_81: 643348997
+      Purple_Clouds_Tileset_82: -751031205
+      Purple_Clouds_Tileset_83: 1607793622
+      Purple_Clouds_Tileset_84: 726588541
+      Purple_Clouds_Tileset_85: 1397383139
+      Purple_Clouds_Tileset_86: 1096136352
+      Purple_Clouds_Tileset_87: -185470119
+      Purple_Clouds_Tileset_88: 384914030
+      Purple_Clouds_Tileset_89: -171280524
       Purple_Clouds_Tileset_9: 1842779250
+      Purple_Clouds_Tileset_90: 1549789669
+      Purple_Clouds_Tileset_91: -1500397539
+      Purple_Clouds_Tileset_92: -1877069481
+      Purple_Clouds_Tileset_93: 1843279375
+      Purple_Clouds_Tileset_94: -1098614907
+      Purple_Clouds_Tileset_95: -2115485992
+      Purple_Clouds_Tileset_96: -1703622773
+      Purple_Clouds_Tileset_97: 1814970582
+      Purple_Clouds_Tileset_98: -367931793
+      Purple_Clouds_Tileset_99: -1511790340
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
