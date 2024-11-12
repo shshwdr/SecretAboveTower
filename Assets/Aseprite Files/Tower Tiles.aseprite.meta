@@ -228,7 +228,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1233
+      x: 621
       y: 332
       width: 602
       height: 320
@@ -240,17 +240,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1233, y: 332}
+    uvTransform: {x: 621, y: 332}
   - name: Tower Tiles_Frame_5
     originalName: 
-    pivot: {x: 0.5033112, y: -0.075}
+    pivot: {x: 0.5100671, y: -0.075}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 621
+      x: 1231
       y: 332
-      width: 604
+      width: 596
       height: 320
     spriteID: 9867ab3e327d1ba42975f04e319631ca
     spriteBone: []
@@ -260,7 +260,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 621, y: 332}
+    uvTransform: {x: 1231, y: 332}
   - name: Tower Tiles_Frame_6
     originalName: 
     pivot: {x: 0.49836063, y: -0.075}
@@ -430,7 +430,7 @@ ScriptedImporter:
       cellRect:
         x: 16
         y: 24
-        width: 604
+        width: 596
         height: 320
       spriteId: 9867ab3e327d1ba42975f04e319631ca
     - name: Tower Tiles_Frame_3
