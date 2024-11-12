@@ -9,8 +9,10 @@ public class CloudManagerNew : Singleton<CloudManagerNew>
     public GameObject tilePrefab;
     public Dictionary<Vector2Int, GameObject> tileMap = new Dictionary<Vector2Int, GameObject>();
     public int width, height;
-    public int[,] cloudTiles;
+    public Dictionary<Vector2Int, int> cloudTiles;
 
+    public int offsetX = -8;
+    public int offsetY = -3;
     public void RemoveCloud(Vector2Int gridPosition)
     {
         if (tileMap.ContainsKey(gridPosition))
@@ -68,12 +70,12 @@ public class CloudManagerNew : Singleton<CloudManagerNew>
 
     void GenerateCloudTiles()
     {
-        cloudTiles = new int[width, height];
-        for (int x = 0; x < width; x++)
+        cloudTiles = new Dictionary< Vector2Int, int>();
+        for (int x = offsetX; x < width-offsetX; x++)
         {
-            for (int y = 0; y < height; y++)
+            for (int y = offsetY; y < height- offsetY; y++)
             {
-                cloudTiles[x, y] = 0;
+                cloudTiles[new Vector2Int(x, y)] = 0;
             }
         }
 
@@ -82,15 +84,15 @@ public class CloudManagerNew : Singleton<CloudManagerNew>
             for (int y = 0; y < 3; y++)
             {
                 
-                cloudTiles[x, y] = 1;
+                cloudTiles[new Vector2Int(x, y)] = 1;
             }
         }
         // // 随机生成云朵
-        for (int x = 0; x < width; x++)
+        for (int x = offsetX; x < width - offsetX; x++)
         {
-            for (int y = 2; y < height; y++)
+            for (int y = offsetY; y < height - offsetY; y++)
             {
-                cloudTiles[x, y] = Random.Range(0, 3)>0?1:0;
+                cloudTiles[new Vector2Int(x, y)] = Random.Range(0, 3)>0?1:0;
             }
         }
         
@@ -103,7 +105,7 @@ public class CloudManagerNew : Singleton<CloudManagerNew>
         {
             for (int y = 0; y < height; y++)
             {
-                if (cloudTiles[x, y] == 1)
+                if (cloudTiles[new Vector2Int(x, y)] == 1)
                 {
                     // int bitmask = GetBitmask(x, y);
                     // Sprite sprite = cloudSprites[GetSpriteIndex(bitmask)];
@@ -133,21 +135,21 @@ public class CloudManagerNew : Singleton<CloudManagerNew>
         // 边界视为无云
         if (x < 0 || x >= width || y < 0 || y >= height)
             return false;
-        return cloudTiles[x, y] == 0;
+        return cloudTiles[new Vector2Int(x, y)] == 0;
     }
 
     int DetermineType(int x, int y)
     {
         // 检查周围 8 个方向（超出边界视为无云）
-        bool top = (y + 1 < height) && cloudTiles[x, y + 1] == 1;
-        bool bottom = (y - 1 >= 0) && cloudTiles[x, y - 1] == 1;
-        bool left = (x - 1 >= 0) && cloudTiles[x - 1, y] == 1;
-        bool right = (x + 1 < width) && cloudTiles[x + 1, y] == 1;
+        bool top = (y + 1 < height) && cloudTiles[new Vector2Int(x, y+1)] == 1;
+        bool bottom = (y - 1 >= 0) && cloudTiles[new Vector2Int(x, y-1)] == 1;
+        bool left = (x - 1 >= 0) && cloudTiles[new Vector2Int(x-1, y)] == 1;
+        bool right = (x + 1 < width) && cloudTiles[new Vector2Int(x+1, y)] == 1;
 
-        bool topLeft = (x - 1 >= 0 && y + 1 < height) && cloudTiles[x - 1, y + 1] == 1;
-        bool topRight = (x + 1 < width && y + 1 < height) && cloudTiles[x + 1, y + 1] == 1;
-        bool bottomLeft = (x - 1 >= 0 && y - 1 >= 0) && cloudTiles[x - 1, y - 1] == 1;
-        bool bottomRight = (x + 1 < width && y - 1 >= 0) && cloudTiles[x + 1, y - 1] == 1;
+        bool topLeft = (x - 1 >= 0 && y + 1 < height) && cloudTiles[new Vector2Int(x - 1, y + 1)] == 1;
+        bool topRight = (x + 1 < width && y + 1 < height) && cloudTiles[new Vector2Int(x + 1, y + 1)] == 1;
+        bool bottomLeft = (x - 1 >= 0 && y - 1 >= 0) && cloudTiles[new Vector2Int(x - 1, y - 1)] == 1;
+        bool bottomRight = (x + 1 < width && y - 1 >= 0) && cloudTiles[new Vector2Int(x + 1, y - 1)] == 1;
 
         int typeIndex = 0;
         
@@ -386,7 +388,7 @@ public class CloudManagerNew : Singleton<CloudManagerNew>
 
     void CreateTile(int x, int y, Sprite sprite)
     {
-        GameObject tile = Instantiate(tilePrefab, new Vector3(x-8, y-2, 0), Quaternion.identity);
+        GameObject tile = Instantiate(tilePrefab, new Vector3(x, y, 0), Quaternion.identity);
         tileMap[new Vector2Int(x, y)] = tile;
         tile.GetComponent<SpriteRenderer>().sprite = sprite;
     }
