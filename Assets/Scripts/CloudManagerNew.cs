@@ -9,14 +9,35 @@ public class CloudManagerNew : Singleton<CloudManagerNew>
     public GameObject tilePrefab;
     public Dictionary<Vector2Int, GameObject> tileMap = new Dictionary<Vector2Int, GameObject>();
     public int width, height;
-    public int[,] cloudTiles;
+    public Dictionary<Vector2Int, int> cloudTiles;
 
+    public int offsetX = -8;
+    public int offsetY = -3;
+    Vector2Int[] directions = new Vector2Int[]{new Vector2Int(1,0),new Vector2Int(-1,0),new Vector2Int(0,1),new Vector2Int(0,-1),new Vector2Int(-1,-1),new Vector2Int(1,-1), new Vector2Int(1,-1),new Vector2Int(1,1),  };
     public void RemoveCloud(Vector2Int gridPosition)
     {
         if (tileMap.ContainsKey(gridPosition))
         {
             Destroy(tileMap[gridPosition].gameObject);
             tileMap.Remove((gridPosition));
+            cloudTiles[gridPosition] = 0;
+            
+            //检查八个方向
+            foreach (var direction in directions)
+            {
+                Vector2Int neighbor = gridPosition + direction;
+                if (tileMap.ContainsKey(neighbor))
+                {
+                    UpdateTile(neighbor);
+                }
+            }
+        }
+    }
+    public void RemoveCloud(List<Vector2Int> gridPositions)
+    {
+        foreach (var position in gridPositions)
+        {
+            RemoveCloud(position);
         }
     }
 
@@ -68,12 +89,12 @@ public class CloudManagerNew : Singleton<CloudManagerNew>
 
     void GenerateCloudTiles()
     {
-        cloudTiles = new int[width, height];
-        for (int x = 0; x < width; x++)
+        cloudTiles = new Dictionary< Vector2Int, int>();
+        for (int x = offsetX; x < width-offsetX; x++)
         {
-            for (int y = 0; y < height; y++)
+            for (int y = offsetY; y < height- offsetY; y++)
             {
-                cloudTiles[x, y] = 0;
+                cloudTiles[new Vector2Int(x, y)] = 0;
             }
         }
 
@@ -82,15 +103,15 @@ public class CloudManagerNew : Singleton<CloudManagerNew>
             for (int y = 0; y < 3; y++)
             {
                 
-                cloudTiles[x, y] = 1;
+                cloudTiles[new Vector2Int(x, y)] = 1;
             }
         }
         // // 随机生成云朵
-        for (int x = 0; x < width; x++)
+        for (int x = offsetX; x < width - offsetX; x++)
         {
-            for (int y = 2; y < height; y++)
+            for (int y = offsetY; y < height - offsetY; y++)
             {
-                cloudTiles[x, y] = Random.Range(0, 3)>0?1:0;
+                cloudTiles[new Vector2Int(x, y)] = Random.Range(0, 3)>0?1:0;
             }
         }
         
@@ -99,11 +120,11 @@ public class CloudManagerNew : Singleton<CloudManagerNew>
 
     void RenderCloudTiles()
     {
-        for (int x = 0; x < width; x++)
+        for (int x = offsetX; x < width-offsetX; x++)
         {
-            for (int y = 0; y < height; y++)
+            for (int y = offsetY; y < height -offsetY; y++)
             {
-                if (cloudTiles[x, y] == 1)
+                if (cloudTiles[new Vector2Int(x, y)] == 1)
                 {
                     // int bitmask = GetBitmask(x, y);
                     // Sprite sprite = cloudSprites[GetSpriteIndex(bitmask)];
@@ -113,41 +134,41 @@ public class CloudManagerNew : Singleton<CloudManagerNew>
             }
         }
     }
+    //
+    // int GetBitmask(int x, int y)
+    // {
+    //     int bitmask = 0;
+    //     if (IsCloud(x, y + 1)) bitmask |= 1;         // top
+    //     if (IsCloud(x + 1, y + 1)) bitmask |= 2;     // topRight
+    //     if (IsCloud(x + 1, y)) bitmask |= 4;         // right
+    //     if (IsCloud(x + 1, y - 1)) bitmask |= 8;     // bottomRight
+    //     if (IsCloud(x, y - 1)) bitmask |= 16;        // bottom
+    //     if (IsCloud(x - 1, y - 1)) bitmask |= 32;    // bottomLeft
+    //     if (IsCloud(x - 1, y)) bitmask |= 64;        // left
+    //     if (IsCloud(x - 1, y + 1)) bitmask |= 128;   // topLeft
+    //     return bitmask;
+    // }
 
-    int GetBitmask(int x, int y)
-    {
-        int bitmask = 0;
-        if (IsCloud(x, y + 1)) bitmask |= 1;         // top
-        if (IsCloud(x + 1, y + 1)) bitmask |= 2;     // topRight
-        if (IsCloud(x + 1, y)) bitmask |= 4;         // right
-        if (IsCloud(x + 1, y - 1)) bitmask |= 8;     // bottomRight
-        if (IsCloud(x, y - 1)) bitmask |= 16;        // bottom
-        if (IsCloud(x - 1, y - 1)) bitmask |= 32;    // bottomLeft
-        if (IsCloud(x - 1, y)) bitmask |= 64;        // left
-        if (IsCloud(x - 1, y + 1)) bitmask |= 128;   // topLeft
-        return bitmask;
-    }
-
-    bool IsCloud(int x, int y)
-    {
-        // 边界视为无云
-        if (x < 0 || x >= width || y < 0 || y >= height)
-            return false;
-        return cloudTiles[x, y] == 0;
-    }
+    // bool IsCloud(int x, int y)
+    // {
+    //     // 边界视为无云
+    //     if (x < offsetX || x >= width-offsetX || y < offsetY || y >= height-offsetY)
+    //         return false;
+    //     return cloudTiles[new Vector2Int(x, y)] == 0;
+    // }
 
     int DetermineType(int x, int y)
     {
         // 检查周围 8 个方向（超出边界视为无云）
-        bool top = (y + 1 < height) && cloudTiles[x, y + 1] == 1;
-        bool bottom = (y - 1 >= 0) && cloudTiles[x, y - 1] == 1;
-        bool left = (x - 1 >= 0) && cloudTiles[x - 1, y] == 1;
-        bool right = (x + 1 < width) && cloudTiles[x + 1, y] == 1;
+        bool top = cloudTiles.ContainsKey((new Vector2Int(x, y+1))) && cloudTiles[new Vector2Int(x, y+1)] == 1;
+        bool bottom =  cloudTiles.ContainsKey((new Vector2Int(x, y-1))) && cloudTiles[new Vector2Int(x, y-1)] == 1;
+        bool left = cloudTiles.ContainsKey((new Vector2Int(x-1, y))) && cloudTiles[new Vector2Int(x-1, y)] == 1;
+        bool right = cloudTiles.ContainsKey((new Vector2Int(x+1, y))) && cloudTiles[new Vector2Int(x+1, y)] == 1;
 
-        bool topLeft = (x - 1 >= 0 && y + 1 < height) && cloudTiles[x - 1, y + 1] == 1;
-        bool topRight = (x + 1 < width && y + 1 < height) && cloudTiles[x + 1, y + 1] == 1;
-        bool bottomLeft = (x - 1 >= 0 && y - 1 >= 0) && cloudTiles[x - 1, y - 1] == 1;
-        bool bottomRight = (x + 1 < width && y - 1 >= 0) && cloudTiles[x + 1, y - 1] == 1;
+        bool topLeft = cloudTiles.ContainsKey((new Vector2Int(x - 1, y + 1))) && cloudTiles[new Vector2Int(x - 1, y + 1)] == 1;
+        bool topRight =cloudTiles. ContainsKey((new Vector2Int(x + 1, y + 1))) && cloudTiles[new Vector2Int(x + 1, y + 1)] == 1;
+        bool bottomLeft = cloudTiles.ContainsKey((new Vector2Int(x - 1, y - 1))) && cloudTiles[new Vector2Int(x - 1, y - 1)] == 1;
+        bool bottomRight = cloudTiles. ContainsKey((new Vector2Int(x + 1, y - 1))) && cloudTiles[new Vector2Int(x + 1, y - 1)] == 1;
 
         int typeIndex = 0;
         
@@ -386,8 +407,22 @@ public class CloudManagerNew : Singleton<CloudManagerNew>
 
     void CreateTile(int x, int y, Sprite sprite)
     {
-        GameObject tile = Instantiate(tilePrefab, new Vector3(x-8, y-2, 0), Quaternion.identity);
+        GameObject tile = Instantiate(tilePrefab, new Vector3(x+1, y+1, 0), Quaternion.identity);
         tileMap[new Vector2Int(x, y)] = tile;
         tile.GetComponent<SpriteRenderer>().sprite = sprite;
+    }
+
+    void UpdateTile(int x, int y)
+    {
+        
+        Sprite sprite = cloudSprites[DetermineSprite(x, y)];
+        tileMap[new Vector2Int(x, y)].GetComponent<SpriteRenderer>().sprite = sprite;
+    }
+    
+    void UpdateTile(Vector2Int pos)
+    {
+        
+        Sprite sprite = cloudSprites[DetermineSprite(pos.x,pos.y)];
+        tileMap[pos].GetComponent<SpriteRenderer>().sprite = sprite;
     }
 }

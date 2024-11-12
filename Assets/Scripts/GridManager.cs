@@ -164,6 +164,7 @@ mousePosition.y-= height/2;
 
     public void PlaceBuilding(Building building, Vector2Int gridPosition)
     {
+        List<Vector2Int> occupiedCells = new List<Vector2Int>();
         //building.transform.position = GridToWorldPosition(gridPosition);
         for (int i = 0; i < building.rows; i++)
         {
@@ -173,12 +174,16 @@ mousePosition.y-= height/2;
                 bool isSelected = building.selections[i].selections[j] == 1;
                 if (isSelected)
                 {
-                    OccupyCell((new Vector2(gridPosition.x + j, gridPosition.y + i)));
+                    var pos = new Vector2Int(j + gridPosition.x, i + gridPosition.y);
+                    occupiedCells.Add(pos);
+                    OccupyCell((pos));
                 }
             }
         }
+
+        building.occupiedCells = occupiedCells;
         BuildingManager.Instance.AddBuilding(building);
 
-        CloudManagerNew.Instance.RemoveCloud(gridPosition);
+        CloudManagerNew.Instance.RemoveCloud(building.occupiedCells);
     }
 }

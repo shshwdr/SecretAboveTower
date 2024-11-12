@@ -20,7 +20,7 @@ public class Building : MonoBehaviour
     public SpriteRenderer shapeSupport;
     public SpriteRenderer building;
     BuildingFunctionBase function;
-    
+    public List<Vector2Int> occupiedCells;
 
     public int rows = 3;
 
