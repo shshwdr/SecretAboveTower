@@ -9,5 +9,5 @@ public class SFXManager : MonoBehaviour
     {
         sfxSource.PlayOneShot(Resources.Load<AudioClip>("SFX/" + name));
     }
-    public void Play(string )
+    //public void Play(string )
 }

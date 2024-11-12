@@ -21,6 +21,13 @@ public class CloudManagerNew : Singleton<CloudManagerNew>
             tileMap.Remove((gridPosition));
         }
     }
+    public void RemoveCloud(List<Vector2Int> gridPositions)
+    {
+        foreach (var position in gridPositions)
+        {
+            RemoveCloud(position);
+        }
+    }
 
     // 定义每种类型的数量
     private int[] typeCounts = {
@@ -101,9 +108,9 @@ public class CloudManagerNew : Singleton<CloudManagerNew>
 
     void RenderCloudTiles()
     {
-        for (int x = 0; x < width; x++)
+        for (int x = offsetX; x < width-offsetX; x++)
         {
-            for (int y = 0; y < height; y++)
+            for (int y = offsetY; y < height -offsetY; y++)
             {
                 if (cloudTiles[new Vector2Int(x, y)] == 1)
                 {
@@ -388,7 +395,7 @@ public class CloudManagerNew : Singleton<CloudManagerNew>
 
     void CreateTile(int x, int y, Sprite sprite)
     {
-        GameObject tile = Instantiate(tilePrefab, new Vector3(x, y, 0), Quaternion.identity);
+        GameObject tile = Instantiate(tilePrefab, new Vector3(x+1, y+1, 0), Quaternion.identity);
         tileMap[new Vector2Int(x, y)] = tile;
         tile.GetComponent<SpriteRenderer>().sprite = sprite;
     }
