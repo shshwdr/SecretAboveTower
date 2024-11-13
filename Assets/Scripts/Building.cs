@@ -14,11 +14,12 @@ public class GridRow
 [System.Serializable]
 public class Building : MonoBehaviour
 {
+    [HideInInspector]
     public string identifier;
     public BuildingInfo info=>CSVLoader.Instance.buildingInfoDict[identifier];
     public SpriteRenderer shape;
-    public SpriteRenderer shapeSupport;
-    public SpriteRenderer building;
+    //public SpriteRenderer shapeSupport;
+   // public SpriteRenderer building;
     BuildingFunctionBase function;
     public List<Vector2Int> occupiedCells;
 
@@ -65,7 +66,7 @@ public class Building : MonoBehaviour
     public void SetColor(Color color)
     {
         shape.color = color;
-        shapeSupport.color = color;
+        //shapeSupport.color = color;
         //building.color = color;
         
     }

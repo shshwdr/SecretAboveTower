@@ -16,16 +16,16 @@ public class BuildingSelectionCell : MonoBehaviour
     {
         button.onClick.AddListener(() =>
         {
-            Hud.Instance.AddBuilding(building);
+            Hud.Instance.AddBuilding(building,buildingCell.info);
             FindObjectOfType<SelectCardMenu>().Hide();
         });
     }
 
-    public void UpdateCell(Building building)
+    public void UpdateCell(Building building,BuildingInfo info)
     {
         this.building = building;
-        buildingCell.Init((building));
-        descText.text = building.info.name + "\n" +building.info.synergyBK + "\n" +building.info.synergyElement + "\n" + building.info.description;
+        buildingCell.Init(building,info);
+        descText.text = info.name + "\n" +info.synergyBK + "\n" +info.synergyElement + "\n" + info.description;
         
     }
 }

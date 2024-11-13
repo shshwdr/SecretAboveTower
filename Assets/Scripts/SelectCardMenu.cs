@@ -39,7 +39,7 @@ public class SelectCardMenu : MenuBase
             var info = allCandidates.PickItem();
             var buildingCell = buildingCells[i];
             var building = Resources.Load < GameObject > ("BuildingShapes/"+info.prefab).GetComponent<Building>();
-            buildingCell.UpdateCell(building);
+            buildingCell.UpdateCell(building,info);
         }
     }
 

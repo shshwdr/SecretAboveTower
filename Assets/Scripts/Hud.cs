@@ -35,10 +35,10 @@ public class Hud : Singleton<Hud>
 
     }
 
-    public void AddBuilding(Building building)
+    public void AddBuilding(Building building,BuildingInfo info)
     {
         var buildingCell = Instantiate(buildingCellPrefab, BottomSelectionView).GetComponent <BuildingCell>();
-        buildingCell.Init(building);
+        buildingCell.Init(building,info);
     }
 
     private void updateResources()
