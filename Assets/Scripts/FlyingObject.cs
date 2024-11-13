@@ -13,6 +13,8 @@ public class FlyingObject : MonoBehaviour
     void Start()
     {
         StartFloating();
+        
+        SFXManager.Instance.Play(clip);
     }
     
     void StartFloating()

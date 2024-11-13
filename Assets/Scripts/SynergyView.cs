@@ -12,6 +12,7 @@ public class SynergyView : Singleton<SynergyView>
     void Start()
     {
         cells = GetComponentsInChildren<SynergyCell>().ToList();
+        UpdateView();
     }
 
     // Update is called once per frame
