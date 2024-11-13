@@ -29,6 +29,7 @@ public class SelectCardMenu : MenuBase
         base.Show(immediate);
         Time.timeScale = 0;
         Refresh();
+        SFXManager.Instance.PlayCardSelection();
     }
 
     void Refresh()

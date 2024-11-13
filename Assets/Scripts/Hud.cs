@@ -16,6 +16,8 @@ public class Hud : Singleton<Hud>
     public TMP_Text time;
 
     public ProgressBar nextBuildingProgress;
+    
+    
 
     
     //public Transform synergiesParent;
