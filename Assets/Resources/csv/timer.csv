@@ -2,4 +2,4 @@
 DrawCard,10,1,,,1
 TriggerBuilding,3,1,,,1
 ConsumeResource,10,1,mapItem,,1
-GenerateFlyingItem,10,1,mapItem,,1
+GenerateFlyingItem,12,1,mapItem,,1

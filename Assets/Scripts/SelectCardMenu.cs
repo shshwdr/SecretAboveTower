@@ -29,6 +29,7 @@ public class SelectCardMenu : MenuBase
         base.Show(immediate);
         Time.timeScale = 0;
         Refresh();
+        SFXManager.Instance.PlayCardSelection();
     }
 
     void Refresh()
@@ -39,7 +40,7 @@ public class SelectCardMenu : MenuBase
             var info = allCandidates.PickItem();
             var buildingCell = buildingCells[i];
             var building = Resources.Load < GameObject > ("BuildingShapes/"+info.prefab).GetComponent<Building>();
-            buildingCell.UpdateCell(building);
+            buildingCell.UpdateCell(building,info);
         }
     }
 

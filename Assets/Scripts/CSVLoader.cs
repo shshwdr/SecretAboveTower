@@ -13,6 +13,7 @@ public class BuildingInfo
     public string synergyElement;
     public string prefab;
     public string description;
+    public string image;
 }
 public class TimerInfo
 {

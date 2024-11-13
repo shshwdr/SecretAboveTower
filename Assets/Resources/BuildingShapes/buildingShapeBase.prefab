@@ -164,15 +164,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d5c29985a92b7345bf4c44f25dcaf59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  identifier: 
   shape: {fileID: 1842234396532591469}
   shapeSupport: {fileID: 7274081613591516058}
   building: {fileID: 0}
-  rows: 3
-  cols: 3
+  occupiedCells: []
+  rows: 2
+  cols: 2
   selections:
-  - selections: 000000000000000000000000
-  - selections: 000000000000000000000000
-  - selections: 000000000000000000000000
+  - selections: 010000000100000000000000
+  - selections: 010000000100000000000000
 --- !u!114 &8784769393273408759
 MonoBehaviour:
   m_ObjectHideFlags: 0

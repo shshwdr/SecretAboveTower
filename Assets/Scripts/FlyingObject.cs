@@ -7,10 +7,14 @@ using UnityEngine.EventSystems;
 public class FlyingObject : MonoBehaviour
 {
     public Transform flyingObjectInner;
+
+    public AudioClip clip;
     // Start is called before the first frame update
     void Start()
     {
         StartFloating();
+        
+        SFXManager.Instance.Play(clip);
     }
     
     void StartFloating()
@@ -43,6 +47,11 @@ public class FlyingObject : MonoBehaviour
     public void OnPointerClick()
     {
         ResourceManager.Instance.AddGold(transform,5);
+        if (clip)
+        {
+            
+            SFXManager.Instance.Play(clip);
+        }
         Destroy(gameObject);
     }
     // private void OnMouseDown()

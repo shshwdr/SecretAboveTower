@@ -10,7 +10,7 @@ public class BuildingCell : MonoBehaviour, IPointerDownHandler
     public Image shapeSupport;
     public Image building;
     public bool isDraggable = true;
-
+    public BuildingInfo info;
     GameObject buildingPrefab;
     // Start is called before the first frame update
     void Start()
@@ -24,10 +24,15 @@ public class BuildingCell : MonoBehaviour, IPointerDownHandler
         
     }
 
-    public void Init(Building building)
+    public void Init(Building building,BuildingInfo info)
     {
         shape.sprite = building.shape.sprite;
+        this.info = info;
         buildingPrefab = building.gameObject;
+        if (info.image != null && info.image != "")
+        {
+            shape.sprite = Resources.Load<Sprite>("BuildingsSprite/"+info.image);
+        }
         //shapeSupport.sprite = building.shapeSupport.sprite;
         //building.building.sprite = building.building.sprite;
     }
@@ -41,6 +46,11 @@ public class BuildingCell : MonoBehaviour, IPointerDownHandler
         }
         
         var building = Instantiate(buildingPrefab);
+        building.GetComponent<Building>().identifier = info.identifier;
+        if (info.image != null && info.image != "")
+        {
+            building.GetComponent<Building>().shape.sprite = shape.sprite;
+        }
         PlayerControllerManager.Instance.StartDragging(building,gameObject);
     }
 }

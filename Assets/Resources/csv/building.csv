@@ -1,5 +1,19 @@
-﻿identifier,synergyBK,synergyElement,name,description,prefab,isReady,rarity
-lightTree,tree,light,lightTree,provide happiness every turn,tree1,1,0
-mushroomTree,tree,food,mushroomTree,provide happiness every turn,tree2,1,0
-hovercraft,sail,light,hovercraft,provide happiness every turn,sail1,1,0
-sails,sail,navi,sails,provide happiness every turn,sail2,1,0
+﻿identifier,synergyBK,synergyElement,name,description,prefab,image,isReady,rarity
+lightTree,tree,light,lightTree,"add 1 happiness per harvest, light a circle around it",lightTree,,1,0
+foodTree,tree,food,foodTree,"add 2 happiness per harvest, add 2 more if next to the same building",foodTree,,1,0
+naviTree,tree,navi,naviTree,add 2 happiness per harvest ,naviTree,Forest_Observatory_Square,1,
+constructionTree,tree,construction,constructionTree,add 2 happiness per harvest ,naviTree,Forest_Workshop_Square,1,
+entertainingTree,tree,entertaining,entertainingTree,add 2 happiness per harvest ,naviTree,Forest_Circus_Square,1,
+magicTree,tree,magic,magicTree,add 2 happiness per harvest ,naviTree,Forest_Alchemist_Square,1,
+hovercraft,sail,light,hovercraft,"add 2 happiness per harvest, light up horizontally",hovercraft,,1,0
+sails,sail,navi,sails,"add 2 happiness per harvest, flying object reward +5%",sails,,1,0
+foodSail,sail,food,foodSail,add 2 happiness per harvest ,naviTree,Windblown_Farm_Square,1,
+constructionSail,sail,construction,constructionSail,add 2 happiness per harvest ,naviTree,Windblown_Workshop_Square,1,
+entertainingSail,sail,entertaining,entertainingSail,add 2 happiness per harvest ,naviTree,Windblown_Circus_Square,1,
+magicSail,sail,magic,magicSail,add 2 happiness per harvest ,naviTree,Windblown_Alchemist_Square,1,
+lightSea,sea,light,hovercraft,add 2 happiness per harvest ,naviTree,Seaside_Lighthouse_Square,1,0
+naviSea,sea,navi,sails,add 2 happiness per harvest ,naviTree,Seaside_Observatory_Square,1,0
+foodSail,sea,food,foodSail,add 2 happiness per harvest ,naviTree,Seaside_Farm_Square,1,
+constructionSail,sea,construction,constructionSail,add 2 happiness per harvest ,naviTree,Seaside_Workshop_Square,1,
+entertainingSail,sea,entertaining,entertainingSail,add 2 happiness per harvest ,naviTree,Seaside_Circus_Square,1,
+magicSail,sea,magic,magicSail,add 2 happiness per harvest ,naviTree,Seaside_Alchemist_Square,1,
