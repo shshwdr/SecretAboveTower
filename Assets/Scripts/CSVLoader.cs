@@ -25,6 +25,10 @@ public class TimerInfo
     public bool shouldResetEveryday;
 }
 
+public class MilestoneInfo
+{
+    public int distance;
+}
 public  class DeckInfo
 {
     public Dictionary<string,int> cards;
@@ -35,7 +39,7 @@ public class CSVLoader : Singleton<CSVLoader>
     public Dictionary<string, BuildingInfo> buildingInfoDict = new Dictionary<string, BuildingInfo>();
     public List<DeckInfo> deckInfos = new List<DeckInfo>();
     public Dictionary<string, TimerInfo> timerDict = new Dictionary<string, TimerInfo>();
-
+public List<MilestoneInfo> milestones;
     public void Init()
     {
         var buildingInfos =
@@ -50,5 +54,6 @@ public class CSVLoader : Singleton<CSVLoader>
         {
             timerDict[info.identifier] = info;
         }
+        milestones = CsvUtil.LoadObjects<MilestoneInfo>("milestone");
     }
 }

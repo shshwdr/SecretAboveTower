@@ -29,11 +29,15 @@ public class SynergyView : Singleton<SynergyView>
         }
 
         int i = 0;
-        foreach (var pair in BuildingManager.Instance.synergyToBuildings)
+        var pairs = BuildingManager.Instance.synergyToBuildings.ToList();
+        //sort pairs by value
+        pairs = pairs.OrderByDescending(pair => pair.Value.Count).ToList();
+        SynergyManager.Instance.UpdateSynergy();
+        foreach (var pair in pairs)
         {
-            
+            cells[i].symbol.sprite = SpriteUtils.GetSynergySprite(pair.Key);
             cells[i].gameObject.SetActive(true);
-            cells[i].text.text = pair.Value.Count.ToString();
+            cells[i].text.text ="lv:"+SynergyManager.Instance.GetLevel((pair.Key))+" "+ pair.Value.Count.ToString()+"/"+SynergyManager.Instance.GetNextLevel((pair.Key));
             i++;
         }
     }

@@ -1,0 +1,10 @@
+﻿identifier,isBK,name,description,values
+tree,1,Tree Synergy,"When you build a tree building, there is {0}% you get another building",5|10|15
+sea,1,Ocean Synergy,decrease the chance a building get destroyed,
+sail,1,Sail Synergy,Increase the {0}% a flying creature and castle in the sky spawn,10|20|30
+food,,Food Synergy,Increase happiness generation for each food building,1|2|3
+light,,Light Synergy,"When you build a Lighting building, the fog around the building will be eliminated more",1|2|3
+navi,,Navi Synergy,gives you more buff when hit the milestone,
+construction,,Construction Synergy,"When you build any tower, all construction building get extra {0} happiness",1|2|3
+entertaining,,Entertaining Synergy,"For all building, when generate happiness, it has 50% chance to generate x{0}",2|3|4
+magic,,Magic Synergy,Reduce resource production time {0} second,1|2|3
