@@ -47,6 +47,6 @@ public class SFXManager : Singleton<SFXManager>
 
     public void PlayBuilding()
     {
-  Play("SFX_Construction_02");      
+  Play("SFX_Fantasy_Construction_01");      
     }
 }
