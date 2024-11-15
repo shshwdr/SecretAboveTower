@@ -29,6 +29,21 @@ public class SFXManager : Singleton<SFXManager>
     {
         Play("UI_Cards_Building_Incoming_V2");
     }
+    public void PlayBuffSelection()
+    {
+        Play("UI_Cards_Building_Incoming_V1");
+    }
+    
+    
+    public void PlayUpgradeSynergy()
+    {
+        Play("UI_Cards_Building_Incoming_V1");
+    }
+    
+    public void PlayFinishMilestone()
+    {
+        Play("UI_Cards_Building_Incoming_V1");
+    }
 
     public void PlayBuilding()
     {

@@ -8,4 +8,10 @@ public static class SpriteUtils
     {
         return Resources.Load<Sprite>("Synergy/"+name);
     }
+
+    public static Sprite GetBuffSprite(BuffInfo info)
+    {
+        
+        return Resources.Load<Sprite>("Synergy/"+info.subType);
+    }
 }

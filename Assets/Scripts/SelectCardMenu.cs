@@ -27,7 +27,6 @@ public class SelectCardMenu : MenuBase
     public override void Show(bool immediate = false)
     {
         base.Show(immediate);
-        Time.timeScale = 0;
         Refresh();
         SFXManager.Instance.PlayCardSelection();
     }
@@ -44,10 +43,4 @@ public class SelectCardMenu : MenuBase
         }
     }
 
-    public override void Hide(bool immediate = false)
-    {
-        base.Hide(immediate);
-
-        Time.timeScale = 1;
-    }
 }

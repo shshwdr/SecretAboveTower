@@ -25,6 +25,15 @@ public class TimerInfo
     public bool shouldResetEveryday;
 }
 
+public class BuffInfo
+{
+    public string type;
+    public string subType;
+    public string identifier => type + subType;
+    public string desc;
+    public bool canDraw;
+}
+
 public class MilestoneInfo
 {
     public int distance;
@@ -39,6 +48,7 @@ public class CSVLoader : Singleton<CSVLoader>
     public Dictionary<string, BuildingInfo> buildingInfoDict = new Dictionary<string, BuildingInfo>();
     public List<DeckInfo> deckInfos = new List<DeckInfo>();
     public Dictionary<string, TimerInfo> timerDict = new Dictionary<string, TimerInfo>();
+    public Dictionary<string, BuffInfo> buffInfoDict = new Dictionary<string, BuffInfo>();
 public List<MilestoneInfo> milestones;
     public void Init()
     {
@@ -55,5 +65,10 @@ public List<MilestoneInfo> milestones;
             timerDict[info.identifier] = info;
         }
         milestones = CsvUtil.LoadObjects<MilestoneInfo>("milestone");
+        var buffInfos = CsvUtil.LoadObjects<BuffInfo>("buff");
+        foreach (var info in buffInfos)
+        {
+            buffInfoDict[info.identifier] = info;
+        }
     }
 }

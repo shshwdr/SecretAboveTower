@@ -170,6 +170,7 @@ public class MenuBase : MonoBehaviour
     private bool isAnimating = false;
     virtual public void Show(bool immediate = false)
     {
+        Time.timeScale = 0;
         StopAllCoroutines();
         menu.SetActive(true);
 
@@ -208,6 +209,7 @@ public class MenuBase : MonoBehaviour
     {
         //DOTween.KillAll();
 
+        Time.timeScale = 1;
         foreach (var animation in GetComponentsInChildren<MenuAnimation>())
         {
             animation.Hide(immediate);
