@@ -404,7 +404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startY: -1
   splitEveryY: 3
-  shownChanceList: 01000000
+  shownChanceList: 010000000000000002000000030000000400000005000000
 --- !u!1 &152589409
 GameObject:
   m_ObjectHideFlags: 0

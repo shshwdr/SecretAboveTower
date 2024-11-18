@@ -45,6 +45,10 @@ public class GridManager : Singleton<GridManager>
     //     }
     // }
 
+    public void MarkCell(Vector2Int cellIndex, GameObject go)
+    {
+        
+    }
     public void OccupyCell(Vector2Int cellIndex,GameObject go)
     {
         if (!grid.ContainsKey(cellIndex))

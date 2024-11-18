@@ -17,13 +17,13 @@ public class ObjectInSkyGeneration : Singleton<ObjectInSkyGeneration>
         chance = shownChanceList.ToList();
         chance.Shuffle();
         int yNow = startY;
-        for (int i = 0; i < 1; i++)
+        for (int i = 0; i < 5; i++)
         {
             var x = Random.Range(0, CloudManagerNew.Instance.offsetX);
             var y1 = Random.Range(yNow, yNow + splitEveryY);
             var y2 = Random.Range(yNow, yNow + splitEveryY);
             var left = new Vector2Int(-x, y1);
-            var right = new Vector2Int(x, y2);
+            var right = new Vector2Int(x+1, y2);
             tryAddObject(left);
             tryAddObject(right);
             
@@ -34,10 +34,10 @@ public class ObjectInSkyGeneration : Singleton<ObjectInSkyGeneration>
 
     void tryAddObject(Vector2Int pos)
     {
-        if (!GridManager.Instance.CanPlace(pos))
-        {
-            return;
-        }
+        // if (!GridManager.Instance.CanPlace(pos))
+        // {
+        //     return;
+        // }
         
         if (chance.Count <= 0)
         {
@@ -55,7 +55,12 @@ public class ObjectInSkyGeneration : Singleton<ObjectInSkyGeneration>
             case 1:
             case 2:
             case 3:
-                var go = Instantiate(Resources.Load<GameObject>("ObjectInSky/castle"));
+            case 4:
+            case 5:
+                var type = (SkyObjectType)(r-1);
+                //get type string
+                
+                var go = Instantiate(Resources.Load<GameObject>("ObjectInSky/"+type.ToString()));
                 GridManager.Instance.OccupyCell(pos,go);
                 go.transform.position = GridManager.Instance.GridToWorldPositionWithHalf(pos);
                 break;
