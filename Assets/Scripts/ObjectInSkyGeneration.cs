@@ -56,12 +56,11 @@ public class ObjectInSkyGeneration : Singleton<ObjectInSkyGeneration>
             case 2:
             case 3:
             case 4:
-            case 5:
                 var type = (SkyObjectType)(r-1);
                 //get type string
                 
                 var go = Instantiate(Resources.Load<GameObject>("ObjectInSky/"+type.ToString()));
-                GridManager.Instance.OccupyCell(pos,go);
+                GridManager.Instance.MarkCell(pos,go.GetComponent<SkyObject>());
                 go.transform.position = GridManager.Instance.GridToWorldPositionWithHalf(pos);
                 break;
         }

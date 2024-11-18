@@ -1,19 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GridManager : Singleton<GridManager>
 {
     private Dictionary<Vector2Int, bool> grid; // 用于存储网格占用状态
-    private Dictionary<Vector2Int, GameObject> gridToGo; // 用于存储网格占用状态
+    private Dictionary<Vector2Int, SkyObject> gridToGo; // 用于存储网格占用状态
     public float cellSize = 1f; // 每个网格单元的大小
     public GameObject prefab; // 用于获取 prefab 的大小
 
     public void Init()
     {
         grid = new Dictionary<Vector2Int, bool>();
-        gridToGo = new Dictionary<Vector2Int, GameObject>();
-        
+        gridToGo = new Dictionary<Vector2Int, SkyObject>();
+
         // 根据 prefab 的大小设置 cellSize
         UpdateCellSize();
     }
@@ -28,7 +29,7 @@ public class GridManager : Singleton<GridManager>
             if (renderer != null)
             {
                 // 计算 cellSize，假设使用 sprite 的边界大小
-                cellSize = renderer.bounds.size.x/3; // 这里选择 x 轴的大小，您可以根据需要调整
+                cellSize = renderer.bounds.size.x / 3; // 这里选择 x 轴的大小，您可以根据需要调整
             }
         }
     }
@@ -45,16 +46,21 @@ public class GridManager : Singleton<GridManager>
     //     }
     // }
 
-    public void MarkCell(Vector2Int cellIndex, GameObject go)
+    public void MarkCell(Vector2Int cellIndex, SkyObject go)
     {
-        
+        if (!grid.ContainsKey(cellIndex))
+        {
+            //grid[cellIndex] = true; // 标记为占用
+            gridToGo[cellIndex] = go;
+        }
     }
-    public void OccupyCell(Vector2Int cellIndex,GameObject go)
+
+    public void OccupyCell(Vector2Int cellIndex)
     {
         if (!grid.ContainsKey(cellIndex))
         {
             grid[cellIndex] = true; // 标记为占用
-            gridToGo[cellIndex] = go;
+            //gridToGo[cellIndex] = go;
         }
     }
 
@@ -86,40 +92,37 @@ public class GridManager : Singleton<GridManager>
 
     public Vector3 GridToWorldPosition(Vector2Int gridPosition)
     {
-        
         // 将网格坐标转换为世界坐标
         float x = gridPosition.x * cellSize + cellSize / 2; // 单元中心
         float y = gridPosition.y * cellSize + cellSize / 2; // 单元中心
-        
+
         return new Vector3(x, y, 0);
     }
-    
-    
+
+
     public Vector3 GridToWorldPositionWithHalf(Vector2Int gridPosition)
     {
-        
         // 将网格坐标转换为世界坐标
-        float x = gridPosition.x * cellSize+ cellSize; // 单元中心
-        float y = gridPosition.y * cellSize+ cellSize ; // 单元中心
-        
+        float x = gridPosition.x * cellSize + cellSize; // 单元中心
+        float y = gridPosition.y * cellSize + cellSize; // 单元中心
+
         return new Vector3(x, y, 0);
     }
-    
-    public Vector3 GridToWorldPosition(Vector2Int gridPosition,GameObject buildingPrefab)
+
+    public Vector3 GridToWorldPosition(Vector2Int gridPosition, GameObject buildingPrefab)
     {
-        
         // 将网格坐标转换为世界坐标
         float x = gridPosition.x * cellSize + cellSize / 2; // 单元中心
         float y = gridPosition.y * cellSize + cellSize / 2; // 单元中心
-        
-        
+
+
         // 获取建筑的尺寸
         SpriteRenderer renderer = buildingPrefab.GetComponentInChildren<SpriteRenderer>();
         float width = renderer.bounds.size.x; // 建筑宽度
         float height = renderer.bounds.size.y; // 建筑高度
-        x+= width/2;
-        y+= height/2;
-        
+        x += width / 2;
+        y += height / 2;
+
         return new Vector3(x, y, 0);
     }
 
@@ -128,8 +131,8 @@ public class GridManager : Singleton<GridManager>
         SpriteRenderer renderer = buildingPrefab.GetComponentInChildren<SpriteRenderer>();
         float width = renderer.bounds.size.x; // 建筑宽度
         float height = renderer.bounds.size.y; // 建筑高度
-        
-        Vector2Int gridPosition = WorldToGridPosition(new Vector2(width/2, height/2));
+
+        Vector2Int gridPosition = WorldToGridPosition(new Vector2(width / 2, height / 2));
         return gridPosition;
     }
 
@@ -139,11 +142,11 @@ public class GridManager : Singleton<GridManager>
         SpriteRenderer renderer = buildingPrefab.GetComponentInChildren<SpriteRenderer>();
         float width = renderer.bounds.size.x; // 建筑宽度
         float height = renderer.bounds.size.y; // 建筑高度
-mousePosition.x-= width/2;
-mousePosition.y-= height/2;
+        mousePosition.x -= width / 2;
+        mousePosition.y -= height / 2;
         // 计算网格坐标
         Vector2Int gridPosition = WorldToGridPosition(mousePosition);
-    
+
         // // 计算偏移量：由于 pivot 在中心，需要减去一半的宽度和高度
         // int xOffset = Mathf.FloorToInt(width / (cellSize * 2)); // 水平偏移
         // int yOffset = Mathf.FloorToInt(height / (cellSize * 2)); // 垂直偏移
@@ -153,7 +156,7 @@ mousePosition.y-= height/2;
         // int gridY = gridPosition.y - yOffset;
 
         return new Vector2Int(gridPosition.x, gridPosition.y);
-    } 
+    }
 
     public bool CanPlace(Vector2Int checkPos)
     {
@@ -161,33 +164,36 @@ mousePosition.y-= height/2;
         {
             return false;
         }
+
         // 创建复选框
-        if( grid.ContainsKey(checkPos))
+        if (grid.ContainsKey(checkPos))
         {
             return false;
         }
 
         return true;
     }
-    public bool CanPlace(Building building,Vector2Int pos)
+
+    public bool CanPlace(Building building, Vector2Int pos)
     {
         bool hasSupport = false;
         for (int j = 0; j < building.cols; j++) //每一个竖溜
         {
             bool checkedLowest = false;
-        for (int i = 0; i < building.rows; i++)
-        {
+            for (int i = 0; i < building.rows; i++)
+            {
                 if (building.selections[i].selections[j] == 1)
                 {
                     if (!checkedLowest)
                     {
                         checkedLowest = true;
-                        if (!CanPlace(new Vector2Int(j + pos.x, i + pos.y-1)))
+                        if (!CanPlace(new Vector2Int(j + pos.x, i + pos.y - 1)))
                         {
                             hasSupport = true;
                         }
                     }
-                    var checkPos= new Vector2Int(j + pos.x, i + pos.y);
+
+                    var checkPos = new Vector2Int(j + pos.x, i + pos.y);
 
                     if (!CanPlace(checkPos))
                     {
@@ -196,13 +202,70 @@ mousePosition.y-= height/2;
                 }
             }
         }
-        
+
         return hasSupport;
     }
 
     public void PlaceBuilding(Building building, Vector2Int gridPosition)
     {
         List<Vector2Int> occupiedCells = new List<Vector2Int>();
+        bool willDestroy = false;
+        List<GameObject> destroyGOs = new List<GameObject>();
+        for (int i = 0; i < building.rows; i++)
+        {
+            for (int j = 0; j < building.cols; j++)
+            {
+                // 创建复选框
+                bool isSelected = building.selections[i].selections[j] == 1;
+                if (isSelected)
+                {
+                    var pos = new Vector2Int(j + gridPosition.x, i + gridPosition.y);
+                    //如果已经被mark了
+
+                    if (gridToGo.ContainsKey(pos))
+                    {
+                        switch (gridToGo[pos].type)
+                        {
+                            case SkyObjectType.castle:
+                            case SkyObjectType.goodCastle:
+                                destroyGOs.Add(gridToGo[pos].gameObject);
+                                
+                                gridToGo.Remove(pos);
+                                willDestroy = true;
+                                break;
+                            case SkyObjectType.destroy:
+                                willDestroy = true;
+                                break;
+                            case SkyObjectType.debuff:
+                                //destroyGOs.Add(gridToGo[pos].gameObject);
+                                gridToGo.Remove(pos);
+                                break;
+                            case SkyObjectType.rainbow:
+                                FindObjectOfType<SelectBuffMenu>().Show();
+                                //destroyGOs.Add(gridToGo[pos].gameObject);
+                                
+                                gridToGo.Remove(pos);
+                                break;
+                        }
+                    }
+
+                    // occupiedCells.Add(pos);
+                    // OccupyCell(pos, building.gameObject);
+                }
+            }
+        }
+
+        foreach (var go in destroyGOs)
+        {
+            Destroy((go.gameObject));
+        }
+
+        if (willDestroy)
+        {
+            Destroy((building.gameObject));
+            return;
+        }
+
         //building.transform.position = GridToWorldPosition(gridPosition);
         for (int i = 0; i < building.rows; i++)
         {
@@ -214,14 +277,77 @@ mousePosition.y-= height/2;
                 {
                     var pos = new Vector2Int(j + gridPosition.x, i + gridPosition.y);
                     occupiedCells.Add(pos);
-                    OccupyCell(pos, building.gameObject);
+                    OccupyCell(pos);
                 }
             }
         }
+        
+        
 
         building.occupiedCells = occupiedCells;
         BuildingManager.Instance.AddBuilding(building);
 
-        CloudManagerNew.Instance.RemoveCloud(building.occupiedCells);
+        CloudManagerNew.Instance.RemoveCloud(AdjacentTiles(building));
+        
+        //检查是否和castle相连
+
+        foreach (var tile in AdjacentTiles(building))
+        {
+            if (gridToGo.ContainsKey(tile) && gridToGo[tile] .used == false)
+            {
+                if (gridToGo[tile].type == SkyObjectType.castle)
+                {
+                    gridToGo[tile].used = true;
+                    FindObjectOfType<SelectBuffMenu>().Show();
+                    OccupyCell(tile);
+                    
+                    var go = Instantiate(Resources.Load<GameObject>("ObjectInSky/goodCastle"));
+                    go.transform.position = gridToGo[tile].transform.position;
+                }
+
+                // if (gridToGo[tile].type == SkyObjectType.goodCastle)
+                // {
+                //     gridToGo[tile].used = true;
+                //     FindObjectOfType<SelectBuffMenu>().Show();
+                //     OccupyCell(tile);
+                // }
+            }
+        }
+    }
+
+    public static List<Vector2Int> AdjacentTiles(Vector2Int pos, int radius =1)
+    {
+        
+        List<Vector2Int> tiles = new List<Vector2Int>();
+
+        // 遍历所有可能的格子
+        for (int x = -radius; x <= radius; x++)
+        {
+            for (int y = -radius; y <= radius; y++)
+            {
+                // 计算当前格子的相对位置
+                Vector2Int newPos = new Vector2Int(pos.x + x, pos.y + y);
+
+                // 使用曼哈顿距离判断是否在 radius 范围内
+                if (Mathf.Abs(x) + Mathf.Abs(y) <= radius)
+                {
+                    tiles.Add(newPos);
+                }
+            }
+        }
+
+        return tiles;
+    }
+    public List<Vector2Int> AdjacentTiles(Building building,int distance = 1)
+    {
+        var res = new List<Vector2Int>();
+        foreach (var pos in building.occupiedCells)
+        {
+            res.AddRange((AdjacentTiles(pos,distance)));
+        }
+        //remove duplicate in res
+        res =  res.Distinct().ToList();
+
+        return res;
     }
 }

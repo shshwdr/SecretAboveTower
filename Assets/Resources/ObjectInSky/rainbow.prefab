@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rainbow
       objectReference: {fileID: 0}
+    - target: {fileID: 4127513792038437587, guid: aee87f948d6ef6e45af345c6cef56c98, type: 3}
+      propertyPath: type
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5750432817509564406, guid: aee87f948d6ef6e45af345c6cef56c98, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

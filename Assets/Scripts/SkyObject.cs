@@ -6,4 +6,5 @@ public enum SkyObjectType{castle,goodCastle,debuff,destroy,rainbow}
 public class SkyObject : MonoBehaviour
 {
     public SkyObjectType type;
+    public bool used = false;
 }

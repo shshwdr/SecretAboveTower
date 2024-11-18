@@ -122,6 +122,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: debuff
       objectReference: {fileID: 0}
+    - target: {fileID: 4127513792038437587, guid: aee87f948d6ef6e45af345c6cef56c98, type: 3}
+      propertyPath: type
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4977113571899572806, guid: aee87f948d6ef6e45af345c6cef56c98, type: 3}
       propertyPath: m_IsActive
       value: 0
