@@ -5,12 +5,14 @@ using UnityEngine;
 public class GridManager : Singleton<GridManager>
 {
     private Dictionary<Vector2Int, bool> grid; // 用于存储网格占用状态
+    private Dictionary<Vector2Int, GameObject> gridToGo; // 用于存储网格占用状态
     public float cellSize = 1f; // 每个网格单元的大小
     public GameObject prefab; // 用于获取 prefab 的大小
 
-    private void Start()
+    public void Init()
     {
         grid = new Dictionary<Vector2Int, bool>();
+        gridToGo = new Dictionary<Vector2Int, GameObject>();
         
         // 根据 prefab 的大小设置 cellSize
         UpdateCellSize();
@@ -32,12 +34,23 @@ public class GridManager : Singleton<GridManager>
     }
 
     // 将特定位置标记为占用
-    public void OccupyCell(Vector2 position)
+    // ReSharper disable Unity.PerformanceAnalysis
+    // public void OccupyCell(Vector2 position)
+    // {
+    //     Vector2Int cellIndex = WorldToGridPosition(position);
+    //     if (!grid.ContainsKey(cellIndex))
+    //     {
+    //         grid[cellIndex] = true; // 标记为占用
+    //         gridToGo[cellIndex] = prefab;
+    //     }
+    // }
+
+    public void OccupyCell(Vector2Int cellIndex,GameObject go)
     {
-        Vector2Int cellIndex = WorldToGridPosition(position);
         if (!grid.ContainsKey(cellIndex))
         {
             grid[cellIndex] = true; // 标记为占用
+            gridToGo[cellIndex] = go;
         }
     }
 
@@ -76,6 +89,18 @@ public class GridManager : Singleton<GridManager>
         
         return new Vector3(x, y, 0);
     }
+    
+    
+    public Vector3 GridToWorldPositionWithHalf(Vector2Int gridPosition)
+    {
+        
+        // 将网格坐标转换为世界坐标
+        float x = gridPosition.x * cellSize+ cellSize; // 单元中心
+        float y = gridPosition.y * cellSize+ cellSize ; // 单元中心
+        
+        return new Vector3(x, y, 0);
+    }
+    
     public Vector3 GridToWorldPosition(Vector2Int gridPosition,GameObject buildingPrefab)
     {
         
@@ -126,7 +151,7 @@ mousePosition.y-= height/2;
         return new Vector2Int(gridPosition.x, gridPosition.y);
     } 
 
-    bool CanPlace(Vector2Int checkPos)
+    public bool CanPlace(Vector2Int checkPos)
     {
         if (checkPos.y < -3 || checkPos.x > 7 || checkPos.x < -9)
         {
@@ -185,7 +210,7 @@ mousePosition.y-= height/2;
                 {
                     var pos = new Vector2Int(j + gridPosition.x, i + gridPosition.y);
                     occupiedCells.Add(pos);
-                    OccupyCell((pos));
+                    OccupyCell(pos, building.gameObject);
                 }
             }
         }

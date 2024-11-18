@@ -148,8 +148,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 524
-      y: 4
+      x: 4
+      y: 1164
       width: 512
       height: 1152
     spriteID: 9d64568c8ccaa2742b2e710c26d82491
@@ -160,7 +160,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 524, y: 4}
+    uvTransform: {x: 4, y: 1164}
   - name: Cloud Tiles_Frame_2
     originalName: 
     pivot: {x: 0.625, y: -0.11111112}
@@ -168,8 +168,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1044
-      y: 4
+      x: 4
+      y: 2324
       width: 512
       height: 1152
     spriteID: 0502adbda8385c5479d85ae1dd89187e
@@ -180,7 +180,27 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1044, y: 4}
+    uvTransform: {x: 4, y: 2324}
+  - name: Cloud Tiles_Frame_3
+    originalName: 
+    pivot: {x: 0.625, y: -0.11111112}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 4
+      width: 512
+      height: 1152
+    spriteID: d808d28c3326eed439180ac236986d9f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -217,6 +237,15 @@ ScriptedImporter:
         width: 512
         height: 1152
       spriteId: 0502adbda8385c5479d85ae1dd89187e
+    - name: Cloud Tiles_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 128
+        width: 512
+        height: 1152
+      spriteId: d808d28c3326eed439180ac236986d9f
     linkedCells: []
     parentIndex: -1
   platformSettings: []

@@ -358,6 +358,53 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8444098363020967274, guid: 142a420e2ab0a1d4ab4810b90b80223c, type: 3}
   m_PrefabInstance: {fileID: 100934232}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &148552350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 148552351}
+  - component: {fileID: 148552352}
+  m_Layer: 0
+  m_Name: objectInSkyGeneration
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &148552351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148552350}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2105977105}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &148552352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148552350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e563d9c1f485da48b156cf114393f5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startY: -1
+  splitEveryY: 3
+  shownChanceList: 01000000
 --- !u!1 &152589409
 GameObject:
   m_ObjectHideFlags: 0
@@ -3788,7 +3835,7 @@ MonoBehaviour:
   width: 20
   height: 200
   offsetX: -8
-  offsetY: -2
+  offsetY: 3
 --- !u!1 &1261022401
 GameObject:
   m_ObjectHideFlags: 0
@@ -5512,15 +5559,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae35a75444081746bff688504412ac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menu: {fileID: 0}
-  fadeInAndOut: 1
-  fadeInAndOutRect: {fileID: 0}
-  animatedRect: {fileID: 0}
-  showTime: 0.5
-  maxHideTime: 0
-  showAnimType: 0
-  title: {fileID: 0}
-  content: {fileID: 0}
 --- !u!1 &1884669472
 GameObject:
   m_ObjectHideFlags: 0
@@ -5950,6 +5988,7 @@ Transform:
   - {fileID: 732453799}
   - {fileID: 371889185}
   - {fileID: 1921468165}
+  - {fileID: 148552351}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2121691398
