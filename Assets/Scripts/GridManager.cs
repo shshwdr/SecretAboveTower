@@ -67,6 +67,15 @@ public class GridManager : Singleton<GridManager>
         return new Vector2Int(x, y);
     }
 
+    public Vector3 GridToWorldPosition(Vector2Int gridPosition)
+    {
+        
+        // 将网格坐标转换为世界坐标
+        float x = gridPosition.x * cellSize + cellSize / 2; // 单元中心
+        float y = gridPosition.y * cellSize + cellSize / 2; // 单元中心
+        
+        return new Vector3(x, y, 0);
+    }
     public Vector3 GridToWorldPosition(Vector2Int gridPosition,GameObject buildingPrefab)
     {
         

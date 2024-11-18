@@ -1,0 +1,19 @@
+﻿type,subType,desc,canDraw
+synergyHappinessIncrease,tree,tree building get +1 happiness,1
+synergyHappinessIncrease,sea,sea building get +1 happiness,1
+synergyHappinessIncrease,sail,sail building get +1 happiness,1
+synergyHappinessIncrease,food,food building get +1 happiness,1
+synergyHappinessIncrease,light,light building get +1 happiness,1
+synergyHappinessIncrease,navi,navi building get +1 happiness,1
+synergyHappinessIncrease,construction,construction building get +1 happiness,1
+synergyHappinessIncrease,entertaining,entertaining building get +1 happiness,1
+synergyHappinessIncrease,magic,magic building get +1 happiness,1
+chanceGetAnotherBuilding,,"When you build a tree building, there is {0}% you get another building",
+decreaseBuildingDestroyChance,,decrease the chance a building get destroyed,
+IncreaseFlyingCreature,,Increase the {0}% a flying creature and castle in the sky spawn,
+allHappinessIncrease,,Increase happiness generation for each food building,
+removeMoreFog,,"When you build a Lighting building, the fog around the building will be eliminated more",
+milestone,,gives you more buff when hit the milestone,
+consturctionBuildingGetMore,,"When you build any tower, all construction building get extra {0} happiness",
+doubleHappiness,,"For all building, when generate happiness, it has 50% chance to generate x{0}",
+reduceProductionTime,,Reduce resource production time {0} second,

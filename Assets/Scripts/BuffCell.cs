@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SynergyCell : MonoBehaviour
+public class BuffCell : MonoBehaviour
 {
     public Image symbol;
     public TMP_Text text;

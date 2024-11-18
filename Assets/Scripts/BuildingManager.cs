@@ -30,6 +30,7 @@ public class BuildingManager : Singleton<BuildingManager> // Start is called bef
         }
         
         SynergyView.Instance.UpdateView();
+        MilestoneManager.Instance.CheckMilestone(building.occupiedCells);
     }
 
     public void TriggerAllBuildings()
