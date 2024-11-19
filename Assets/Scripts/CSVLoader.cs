@@ -38,6 +38,12 @@ public class MilestoneInfo
 {
     public int distance;
 }
+
+public class SkyObjectInfo
+{
+    public string identifier;
+    public string desc;
+}
 public  class DeckInfo
 {
     public Dictionary<string,int> cards;
@@ -49,6 +55,7 @@ public class CSVLoader : Singleton<CSVLoader>
     public List<DeckInfo> deckInfos = new List<DeckInfo>();
     public Dictionary<string, TimerInfo> timerDict = new Dictionary<string, TimerInfo>();
     public Dictionary<string, BuffInfo> buffInfoDict = new Dictionary<string, BuffInfo>();
+    public Dictionary<string, SkyObjectInfo> skyObjectInfoDict = new Dictionary<string, SkyObjectInfo>();
 public List<MilestoneInfo> milestones;
     public void Init()
     {
@@ -69,6 +76,11 @@ public List<MilestoneInfo> milestones;
         foreach (var info in buffInfos)
         {
             buffInfoDict[info.identifier] = info;
+        }
+        var skyObjectInfos = CsvUtil.LoadObjects<SkyObjectInfo>("skyObject");
+        foreach (var info in skyObjectInfos)
+        {
+            skyObjectInfoDict[info.identifier] = info;
         }
     }
 }

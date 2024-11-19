@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class GridManager : Singleton<GridManager>
 {
@@ -9,7 +10,7 @@ public class GridManager : Singleton<GridManager>
     private Dictionary<Vector2Int, SkyObject> gridToGo; // 用于存储网格占用状态
     public float cellSize = 1f; // 每个网格单元的大小
     public GameObject prefab; // 用于获取 prefab 的大小
-
+    public GameObject destroyPrefab;
     public void Init()
     {
         grid = new Dictionary<Vector2Int, bool>();
@@ -173,6 +174,8 @@ public class GridManager : Singleton<GridManager>
 
         return true;
     }
+    
+    
 
     public bool CanPlace(Building building, Vector2Int pos)
     {
@@ -228,20 +231,25 @@ public class GridManager : Singleton<GridManager>
                         {
                             case SkyObjectType.castle:
                             case SkyObjectType.goodCastle:
+                                FindObjectOfType<PopupMenu>().Show("Crash","During construction, people accidentally collided with the Sky Castle, leading to the destruction of both the building and the castle.");
                                 destroyGOs.Add(gridToGo[pos].gameObject);
                                 
                                 gridToGo.Remove(pos);
                                 willDestroy = true;
                                 break;
                             case SkyObjectType.destroy:
+                                FindObjectOfType<PopupMenu>().Show("BlackHole","A mysterious black hole appeared in the sky. Any building that came into contact with it vanished without a trace.");
                                 willDestroy = true;
                                 break;
                             case SkyObjectType.debuff:
+                                building.AddEffect("debuff");
+                                FindObjectOfType<PopupMenu>().Show("It's a grim..","Unidentified flying objects hovered around a building, permanently lowering its happiness score.");
                                 //destroyGOs.Add(gridToGo[pos].gameObject);
                                 gridToGo.Remove(pos);
                                 break;
                             case SkyObjectType.rainbow:
-                                FindObjectOfType<SelectBuffMenu>().Show();
+                                building.AddEffect("rainbow");
+                                FindObjectOfType<PopupMenu>().Show("Look! A rainbow!","Everyone who sees the rainbow feels happiness.This building's happiness score was permanently increased.");
                                 //destroyGOs.Add(gridToGo[pos].gameObject);
                                 
                                 gridToGo.Remove(pos);
@@ -257,14 +265,10 @@ public class GridManager : Singleton<GridManager>
 
         foreach (var go in destroyGOs)
         {
+            DestoryTile(go.transform.position);
             Destroy((go.gameObject));
         }
 
-        if (willDestroy)
-        {
-            Destroy((building.gameObject));
-            return;
-        }
 
         //building.transform.position = GridToWorldPosition(gridPosition);
         for (int i = 0; i < building.rows; i++)
@@ -277,11 +281,21 @@ public class GridManager : Singleton<GridManager>
                 {
                     var pos = new Vector2Int(j + gridPosition.x, i + gridPosition.y);
                     occupiedCells.Add(pos);
-                    OccupyCell(pos);
                 }
             }
         }
-        
+        if (willDestroy)
+        {
+            DestroyBuilding(occupiedCells);
+            Destroy((building.gameObject));
+            return;
+        }
+
+        foreach (var pos in occupiedCells)
+        {
+            
+            OccupyCell(pos);
+        }
         
 
         building.occupiedCells = occupiedCells;
@@ -298,7 +312,7 @@ public class GridManager : Singleton<GridManager>
                 if (gridToGo[tile].type == SkyObjectType.castle)
                 {
                     gridToGo[tile].used = true;
-                    FindObjectOfType<SelectBuffMenu>().Show();
+                    FindObjectOfType<SelectBuffMenu>().Show("People encountered the legendary Sky Castle and received its blessings.");
                     OccupyCell(tile);
                     
                     var go = Instantiate(Resources.Load<GameObject>("ObjectInSky/goodCastle"));
@@ -314,6 +328,23 @@ public class GridManager : Singleton<GridManager>
             }
         }
     }
+
+    public void DestoryTile(Vector3 position)
+    {
+        var go =  Instantiate(destroyPrefab);
+        go.transform.position = position;
+        
+        Destroy(go,0.33f);
+    }
+
+    public void DestroyBuilding(List<Vector2Int> building)
+    {
+        foreach (var cell in building)
+        {
+            DestoryTile(GridToWorldPosition(cell));
+        }
+    }
+    
 
     public static List<Vector2Int> AdjacentTiles(Vector2Int pos, int radius =1)
     {

@@ -30,6 +30,8 @@ public class MenuBase : MonoBehaviour
     public float maxHideTime;
     public MenuShowAnimType showAnimType;
     protected float autoInteractTime = 1;
+    public bool wouldPause = true;
+    private float timeScale;
     public virtual void UpdateMenu()
     {
         
@@ -170,7 +172,11 @@ public class MenuBase : MonoBehaviour
     private bool isAnimating = false;
     virtual public void Show(bool immediate = false)
     {
-        Time.timeScale = 0;
+        if (wouldPause)
+        {
+            timeScale = Time.timeScale;
+            Time.timeScale = 0;
+        }
         StopAllCoroutines();
         menu.SetActive(true);
 
@@ -208,8 +214,11 @@ public class MenuBase : MonoBehaviour
     virtual public void Hide(bool immediate = false)
     {
         //DOTween.KillAll();
+        if (wouldPause)
+        {
 
-        Time.timeScale = 1;
+            Time.timeScale = 1;//timeScale;
+        }
         foreach (var animation in GetComponentsInChildren<MenuAnimation>())
         {
             animation.Hide(immediate);

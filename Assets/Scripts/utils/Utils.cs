@@ -8,6 +8,54 @@ public class Utils : MonoBehaviour
     static public Vector2[] dir4V2 = { new Vector2(1, 0), new Vector2(-1, 0), new Vector2(0, -1), new Vector2(0, 1), };
     static public Vector2Int[] dir4V2Int = { new Vector2Int(1, 0), new Vector2Int(-1, 0), new Vector2Int(0, -1), new Vector2Int(0, 1), };
     static public Vector2[] dir5V2 = { new Vector2(1, 0), new Vector2(-1, 0), new Vector2(0, -1), new Vector2(0, 1), new Vector2(0, 0), };
+    
+    public static T FindInterfaceInParents<T>(Component Obj) where T : class
+    {
+        // 首先检查当前物体的组件
+        T component = Obj.GetComponent<T>();
+        if (component != null)
+        {
+            return component;  // 如果当前物体实现了接口，直接返回
+        }
+
+        // 向上查找父物体
+        Transform parentTransform = Obj.transform.parent;
+        while (parentTransform != null)
+        {
+            // 检查父物体是否有实现接口的组件
+            component = parentTransform.GetComponent<T>();
+            if (component != null)
+            {
+                return component;  // 找到就返回
+            }
+            parentTransform = parentTransform.parent;  // 继续向上查找更高层的父物体
+        }
+
+        // 如果没有找到，返回 null
+        return null;
+    }
+    public T FindComponentInAncestors<T>() where T : Component
+    {
+        T component = GetComponentInParent<T>();  // 从父物体开始查找
+        if (component != null)
+        {
+            return component;  // 找到就返回
+        }
+
+        // 如果没找到，继续向上查找
+        Transform parentTransform = transform.parent;
+        while (parentTransform != null)
+        {
+            component = parentTransform.GetComponent<T>();
+            if (component != null)
+            {
+                return component;  // 找到就返回
+            }
+            parentTransform = parentTransform.parent;  // 继续查找更上级父物体
+        }
+
+        return null;  // 如果没找到，返回 null
+    }
 
     static public Vector3 GetClosestPointOnFiniteLine(Vector3 point, Vector3 line_start, Vector3 line_end)
     {

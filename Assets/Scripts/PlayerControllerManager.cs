@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerControllerManager : Singleton<PlayerControllerManager>
 {
@@ -12,13 +13,41 @@ public class PlayerControllerManager : Singleton<PlayerControllerManager>
         currentBuilding = building;
         this.cell = cell;
     }
-    
+
+    public HoveredObject hoveredObject;
     public void Update()
     {
         // 检查当前是否有 Building 在拖动
         if (currentBuilding != null)
         {
             DragBuilding();
+        }
+        else
+        {
+            if (EventSystem.current.IsPointerOverGameObject())
+            {
+                // 如果鼠标在 UI 上，不显示弹框
+                HoverOverMenu.FindFirstInstance<HoverOverMenu>().Hide();
+                hoveredObject = null;
+                return;
+            }
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition); // 获取鼠标位置
+            RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero); // 使用射线检测鼠标指向的物体
+            bool isMouseOverSprite;
+            if (hit.collider != null && hit.collider.GetComponent<HoveredObject>() ) // 检查是否碰到当前物体
+            {
+                if( hit.collider.GetComponent<HoveredObject>() !=  hoveredObject)
+                {
+                    hoveredObject = hit.collider.GetComponent<HoveredObject>();
+
+                    hoveredObject.Show();
+                }
+            }
+            else
+            {
+                hoveredObject = null;
+                HoverOverMenu.FindFirstInstance<HoverOverMenu>().Hide();
+            }
         }
     }
     private void DragBuilding()

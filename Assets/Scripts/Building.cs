@@ -12,8 +12,10 @@ public class GridRow
     }
 }
 [System.Serializable]
-public class Building : MonoBehaviour
+public class Building : MonoBehaviour,IHoverable
 {
+    private BoxCollider2D collider;
+    public List<string> effects = new List < string > ();
     [HideInInspector]
     public string identifier;
     public BuildingInfo info=>CSVLoader.Instance.buildingInfoDict[identifier];
@@ -28,6 +30,11 @@ public class Building : MonoBehaviour
     public int cols = 3;
     public List<GridRow> selections;
 
+    public void AddEffect(string effect)
+    {
+        
+        effects.Add(effect);
+    }
     public void Trigger()
     {
         function?.Trigger();
@@ -40,6 +47,24 @@ public class Building : MonoBehaviour
         if (function == null)
         {
             function = GetComponent<BuildingFunctionBase>();
+        }
+        ResetCollider();
+    }
+    
+    void ResetCollider()
+    {
+        // 获取 SpriteRenderer 和 BoxCollider2D 组件
+        BoxCollider2D boxCollider = GetComponentInChildren<BoxCollider2D>();
+        SpriteRenderer spriteRenderer = boxCollider.GetComponent<SpriteRenderer>();
+
+        if (spriteRenderer != null && boxCollider != null)
+        {
+            // 获取 Sprite 的边界大小
+            Vector2 spriteSize = spriteRenderer.sprite.bounds.size;
+
+            // 设置 BoxCollider2D 的尺寸，使其匹配 Sprite 的大小
+            boxCollider.size = spriteSize;
+            boxCollider.offset = spriteRenderer.sprite.bounds.center - transform.position; // 调整偏移，使其正确匹配
         }
     }
     public void Init()
@@ -70,5 +95,9 @@ public class Building : MonoBehaviour
         //building.color = color;
         
     }
-  
+
+    public void Hover()
+    {
+        HoverOverMenu.FindFirstInstance<HoverOverMenu>().Show(info.name,info.description);
+    }
 }

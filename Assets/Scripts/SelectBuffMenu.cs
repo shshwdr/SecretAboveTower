@@ -12,6 +12,12 @@ public class SelectBuffMenu : MenuBase
     {
         title.text = "You reached a milestone, Select a buff!";
     }
+
+    public void Show(string title)
+    {
+        this.title.text = title;
+        Show();
+    }
     
     public override void Show(bool immediate = false)
     {
