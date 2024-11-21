@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     {
         CSVLoader.Instance.Init();
         ResourceManager.Instance.Init();
+        PopupMessageManager.Instance.Init();
         TimerManager.Instance.Init();
         GridManager.Instance.Init();
         ObjectInSkyGeneration.Instance.Init();

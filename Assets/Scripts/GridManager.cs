@@ -231,25 +231,29 @@ public class GridManager : Singleton<GridManager>
                         {
                             case SkyObjectType.castle:
                             case SkyObjectType.goodCastle:
-                                FindObjectOfType<PopupMenu>().Show("Crash","During construction, people accidentally collided with the Sky Castle, leading to the destruction of both the building and the castle.");
+                                PopupMessageManager.Instance.AddMessage((new PopupMessageData(){messageType= PopupMessageType.Popup,title = "Crash",desc = "During construction, people accidentally collided with the Sky Castle, leading to the destruction of both the building and the castle."}));
+                               // FindObjectOfType<PopupMenu>().Show("Crash","During construction, people accidentally collided with the Sky Castle, leading to the destruction of both the building and the castle.");
                                 destroyGOs.Add(gridToGo[pos].gameObject);
                                 
                                 gridToGo.Remove(pos);
                                 willDestroy = true;
                                 break;
                             case SkyObjectType.destroy:
-                                FindObjectOfType<PopupMenu>().Show("BlackHole","A mysterious black hole appeared in the sky. Any building that came into contact with it vanished without a trace.");
+                                PopupMessageManager.Instance.AddMessage( new PopupMessageData() {messageType= PopupMessageType.Popup,title = "BlackHole",desc = "A mysterious black hole appeared in the sky. Any building that came into contact with it vanished without a trace."});
+                               // FindObjectOfType<PopupMenu>().Show("BlackHole","A mysterious black hole appeared in the sky. Any building that came into contact with it vanished without a trace.");
                                 willDestroy = true;
                                 break;
                             case SkyObjectType.debuff:
                                 building.AddEffect("debuff");
-                                FindObjectOfType<PopupMenu>().Show("It's a grim..","Unidentified flying objects hovered around a building, permanently lowering its happiness score.");
+                                PopupMessageManager.Instance.AddMessage( new PopupMessageData() {messageType= PopupMessageType.Popup,title = "It's a grim..",desc = "Unidentified flying objects hovered around a building, permanently lowering its happiness score."});
+                                //FindObjectOfType<PopupMenu>().Show("It's a grim..","Unidentified flying objects hovered around a building, permanently lowering its happiness score.");
                                 //destroyGOs.Add(gridToGo[pos].gameObject);
                                 gridToGo.Remove(pos);
                                 break;
                             case SkyObjectType.rainbow:
                                 building.AddEffect("rainbow");
-                                FindObjectOfType<PopupMenu>().Show("Look! A rainbow!","Everyone who sees the rainbow feels happiness.This building's happiness score was permanently increased.");
+                                PopupMessageManager.Instance.AddMessage( new PopupMessageData() {messageType= PopupMessageType.Popup,title = "Look! A rainbow!",desc = "Everyone who sees the rainbow feels happiness.This building's happiness score was permanently increased."});
+                                //FindObjectOfType<PopupMenu>().Show("Look! A rainbow!","Everyone who sees the rainbow feels happiness.This building's happiness score was permanently increased.");
                                 //destroyGOs.Add(gridToGo[pos].gameObject);
                                 
                                 gridToGo.Remove(pos);
@@ -312,7 +316,9 @@ public class GridManager : Singleton<GridManager>
                 if (gridToGo[tile].type == SkyObjectType.castle)
                 {
                     gridToGo[tile].used = true;
-                    FindObjectOfType<SelectBuffMenu>().Show("People encountered the legendary Sky Castle and received its blessings.");
+                    
+                    PopupMessageManager.Instance.AddMessage(new PopupMessageData(){messageType= PopupMessageType.SelectBuff,title = "People encountered the legendary Sky Castle and received its blessings."});
+                    //FindObjectOfType<SelectBuffMenu>().Show("People encountered the legendary Sky Castle and received its blessings.");
                     OccupyCell(tile);
                     
                     var go = Instantiate(Resources.Load<GameObject>("ObjectInSky/goodCastle"));
