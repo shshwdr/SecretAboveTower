@@ -60,7 +60,9 @@ public class MilestoneManager : Singleton<MilestoneManager>
         currentMilestoneIndex++;
         UpdateMilestone();
         
-        FindObjectOfType<SelectBuffMenu>().SetMilestoneTitle();
-        FindObjectOfType<SelectBuffMenu>().Show();
+        PopupMessageManager.Instance.AddMessage(new PopupMessageData(){messageType= PopupMessageType.SelectBuff,title = "You reached a milestone, Select a buff!"});
+        
+        //FindObjectOfType<SelectBuffMenu>().SetMilestoneTitle();
+        //FindObjectOfType<SelectBuffMenu>().Show();
     }
 }

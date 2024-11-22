@@ -14,7 +14,7 @@ public class SelectCardMenu : MenuBase
     protected override void Start()
     {
         base.Start();
-        Show();
+        //Show();
         // refreshButton.onClick.AddListener(() =>
         // {
         //     Refresh();
