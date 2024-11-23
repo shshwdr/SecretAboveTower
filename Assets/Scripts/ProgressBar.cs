@@ -18,6 +18,10 @@ public class ProgressBar : MonoBehaviour
     public void SetProgress(float progress)
     {
         barImage.fillAmount = progress/maxValue;
-        text.text = (int)(progress)+"/"+maxValue;
+        if (text)
+        {
+            
+            text.text = (int)(progress)+"/"+maxValue;
+        }
     }
 }

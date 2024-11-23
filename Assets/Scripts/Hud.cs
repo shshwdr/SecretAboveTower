@@ -16,8 +16,9 @@ public class Hud : Singleton<Hud>
     public TMP_Text time;
 
     public ProgressBar nextBuildingProgress;
-    
-    
+
+    public ProgressBar nextPayProgress;
+    public ProgressBar nextHarvestProgress;
 
     
     //public Transform synergiesParent;
@@ -35,6 +36,8 @@ public class Hud : Singleton<Hud>
         EventPool.OptIn("DrawCardTimerTick",updateResources);
         nextBuildingProgress.SetMaxValue((int)TimerManager.Instance.timers[TimerType.DrawCard].Duration);
 
+        nextHarvestProgress.SetMaxValue((int)TimerManager.Instance.timers[TimerType.TriggerBuilding].Duration);
+        nextPayProgress.SetMaxValue((int)TimerManager.Instance.timers[TimerType.ConsumeResource].Duration);
     }
 
     public BuildingCell AddBuilding(Building building,BuildingInfo info)
@@ -49,6 +52,9 @@ public class Hud : Singleton<Hud>
         gold.text = "Gold: "+ResourceManager.Instance.GetGold().ToString();
         time.text = "Time: "+TimerManager.Instance.PlayedTime.ToString();
         nextBuildingProgress.SetProgress(TimerManager.Instance.timers[TimerType.DrawCard].TimeRemaining);
+        
+        nextHarvestProgress.SetProgress(TimerManager.Instance.timers[TimerType.TriggerBuilding].TimeRemaining);
+        nextPayProgress.SetProgress(TimerManager.Instance.timers[TimerType.ConsumeResource].TimeRemaining);
     }
     
 }

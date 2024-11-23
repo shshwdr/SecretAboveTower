@@ -82,7 +82,7 @@ public class PlayerControllerManager : Singleton<PlayerControllerManager>
         }
 
         // 检查放置
-        if (Input.GetMouseButtonUp(0)) // 左键放下
+        if (Input.GetMouseButtonDown(0)) // 左键放下
         {
             if (/*IsInDropArea(mousePosition) ||*/ !canPlace)
             {

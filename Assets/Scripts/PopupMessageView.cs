@@ -22,7 +22,7 @@ public class PopupMessageView : Singleton<PopupMessageView>
         cellObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -1000);
         
         // Start the animation to move it from right to left
-        StartCoroutine(MoveCellToPosition(cellObject.GetComponent<RectTransform>(), new Vector2( 0,-100*(activeCells.Count ) )));
+        StartCoroutine(MoveCellToPosition(cellObject.GetComponent<RectTransform>(), new Vector2( 0,-35*(activeCells.Count ) )));
 
         // Add to active cells list
         activeCells.Add(messageCell);
@@ -53,7 +53,7 @@ public class PopupMessageView : Singleton<PopupMessageView>
             if (activeCells[i] != clickedCell)
             {
                 // Move this cell forward (to a new position)
-                StartCoroutine(MoveCellToPosition(activeCells[i].GetComponent<RectTransform>(), new Vector2(0, -100*(i ) )));
+                StartCoroutine(MoveCellToPosition(activeCells[i].GetComponent<RectTransform>(), new Vector2(0, -35*(i ) )));
             }
         }
 
