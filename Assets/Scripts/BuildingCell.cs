@@ -53,4 +53,17 @@ public class BuildingCell : MonoBehaviour, IPointerDownHandler
         }
         PlayerControllerManager.Instance.StartDragging(building,gameObject);
     }
+
+    public void OnPointerDown()
+    {
+        
+        
+        var building = Instantiate(buildingPrefab);
+        building.GetComponent<Building>().identifier = info.identifier;
+        if (info.image != null && info.image != "")
+        {
+            building.GetComponent<Building>().shape.sprite = shape.sprite;
+        }
+        PlayerControllerManager.Instance.StartDragging(building,gameObject);
+    }
 }

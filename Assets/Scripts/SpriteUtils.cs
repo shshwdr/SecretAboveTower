@@ -14,4 +14,10 @@ public static class SpriteUtils
         
         return Resources.Load<Sprite>("Synergy/"+info.subType);
     }
+
+    public static Sprite GetPopupMessageSprite(string identifier)
+    {
+        
+            return Resources.Load<Sprite>("popupMessage/"+identifier);
+    }
 }

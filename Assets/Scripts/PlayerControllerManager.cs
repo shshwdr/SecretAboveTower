@@ -84,11 +84,11 @@ public class PlayerControllerManager : Singleton<PlayerControllerManager>
         // 检查放置
         if (Input.GetMouseButtonUp(0)) // 左键放下
         {
-            if (IsInDropArea(mousePosition) || !canPlace)
+            if (/*IsInDropArea(mousePosition) ||*/ !canPlace)
             {
-               // currentBuilding.GetComponent<Building>().LockBuilding();
-                Destroy(currentBuilding);
-                currentBuilding = null; // 取消选择
+               // // currentBuilding.GetComponent<Building>().LockBuilding();
+               //  Destroy(currentBuilding);
+               //  currentBuilding = null; // 取消选择
             }
             else
             {

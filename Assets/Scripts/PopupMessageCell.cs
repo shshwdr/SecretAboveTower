@@ -7,11 +7,14 @@ public class PopupMessageCell : MonoBehaviour
     public TMP_Text messageText; // Text component to display the message
 
     private PopupMessageData message;
+    public Image icon;
 
     // Setup the cell with a message and the click handler
     public void Setup(PopupMessageData message, System.Action<PopupMessageCell> onClick)
     {
+        
         this.message = message;
+        icon.sprite = SpriteUtils.GetPopupMessageSprite(message.messageType.ToString());
         messageText.text = message.messageType.ToString();
 
         Button button = GetComponentInChildren<Button>();

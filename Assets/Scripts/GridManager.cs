@@ -161,7 +161,7 @@ public class GridManager : Singleton<GridManager>
 
     public bool CanPlace(Vector2Int checkPos)
     {
-        if (checkPos.y < -3 || checkPos.x > 7 || checkPos.x < -9)
+        if (checkPos.y < -5 || checkPos.x > 7 || checkPos.x < -9)
         {
             return false;
         }

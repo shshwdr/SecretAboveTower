@@ -19,10 +19,10 @@ public class PopupMessageView : Singleton<PopupMessageView>
         messageCell.Setup(message, OnMessageCellClicked); // Setup the message cell
 
         // Set the position to the far right initially
-        cellObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(1000, 0);
+        cellObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -1000);
         
         // Start the animation to move it from right to left
-        StartCoroutine(MoveCellToPosition(cellObject.GetComponent<RectTransform>(), new Vector2(100*(activeCells.Count ), 0 )));
+        StartCoroutine(MoveCellToPosition(cellObject.GetComponent<RectTransform>(), new Vector2( 0,-100*(activeCells.Count ) )));
 
         // Add to active cells list
         activeCells.Add(messageCell);
@@ -53,9 +53,12 @@ public class PopupMessageView : Singleton<PopupMessageView>
             if (activeCells[i] != clickedCell)
             {
                 // Move this cell forward (to a new position)
-                StartCoroutine(MoveCellToPosition(activeCells[i].GetComponent<RectTransform>(), new Vector2(100*(i ), 0 )));
+                StartCoroutine(MoveCellToPosition(activeCells[i].GetComponent<RectTransform>(), new Vector2(0, -100*(i ) )));
             }
         }
+
+        StartCoroutine(MoveCellToPosition(clickedCell.GetComponent<RectTransform>(), new Vector2(0, 200)));
+        Destroy(clickedCell.gameObject, moveDuration+1);
 
         // Move the clicked cell to the front (latest position)
         //StartCoroutine(MoveCellToPosition(clickedCell.GetComponent<RectTransform>(), new Vector2(0, 0)));
