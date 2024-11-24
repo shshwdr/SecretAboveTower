@@ -6,7 +6,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
-public enum MenuShowAnimType{zoomOut,scrollUp}
+public enum MenuShowAnimType{zoomOut,scrollUp,scrollDown}
 public class MenuBase : MonoBehaviour
 {
     public GameObject menu;
@@ -166,6 +166,24 @@ public class MenuBase : MonoBehaviour
                      //animatedRect.DOScale(targetSizeDelta, showTime).SetEase( Ease.OutBack);
                  }
                  break;
+             case MenuShowAnimType.scrollDown:
+                 
+                 if (immediate)
+                 {
+                     animatedRect.position = targetTrans;
+                 }
+                 else
+                 {
+                     
+                     animatedRect.position = Camera.main.WorldToScreenPoint(Vector3.zero) + new Vector3(0, Screen.height/2,0);
+                     //animatedRect.localScale =Vector3.zero;
+        
+                     animatedRect.DOMove(targetTrans, showTime).SetEase( Ease.InQuad).SetUpdate(true);
+
+                     // 缩放到目标大小
+                     //animatedRect.DOScale(targetSizeDelta, showTime).SetEase( Ease.OutBack);
+                 }
+                 break;
         }
     }
 
@@ -253,6 +271,15 @@ public class MenuBase : MonoBehaviour
                     //animatedRect.localScale =Vector3.zero;
         
                     animatedRect.DOMove(Camera.main.WorldToScreenPoint(Vector3.zero) - new Vector3(0, Screen.height/2,0), hideTime).SetEase( Ease.OutQuad);
+
+                    // 缩放到目标大小
+                    //animatedRect.DOScale(targetSizeDelta, showTime).SetEase( Ease.OutBack);
+                    break;
+                case MenuShowAnimType.scrollDown:
+                 
+                    //animatedRect.localScale =Vector3.zero;
+        
+                    animatedRect.DOMove(Camera.main.WorldToScreenPoint(Vector3.zero) + new Vector3(0, Screen.height/2,0), hideTime).SetEase( Ease.OutQuad);
 
                     // 缩放到目标大小
                     //animatedRect.DOScale(targetSizeDelta, showTime).SetEase( Ease.OutBack);

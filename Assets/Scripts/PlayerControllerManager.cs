@@ -33,6 +33,21 @@ public class PlayerControllerManager : Singleton<PlayerControllerManager>
             }
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition); // 获取鼠标位置
             RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero); // 使用射线检测鼠标指向的物体
+            
+            
+            if (hit.collider != null && hit.collider.GetComponent<ClickableObject>() ) // 检查是否碰到当前物体
+            {
+                if( Input.GetMouseButtonDown(0))
+                {
+                    hit.collider.GetComponent<ClickableObject>().Click();
+                }
+            }
+            
+            
+            
+            
+            
+            
             bool isMouseOverSprite;
             if (hit.collider != null && hit.collider.GetComponent<HoveredObject>() ) // 检查是否碰到当前物体
             {

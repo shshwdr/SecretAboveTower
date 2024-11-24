@@ -4,7 +4,12 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class FlyingObject : MonoBehaviour
+public interface IClickable
+{
+    public void OnPointerClick();
+}
+
+public class FlyingObject : MonoBehaviour,IClickable
 {
     public Transform flyingObjectInner;
 
@@ -52,7 +57,8 @@ public class FlyingObject : MonoBehaviour
             
             SFXManager.Instance.Play(clip);
         }
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        //Destroy(gameObject);
     }
     // private void OnMouseDown()
     // {

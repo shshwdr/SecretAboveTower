@@ -12,7 +12,7 @@ public static class SpriteUtils
     public static Sprite GetBuffSprite(BuffInfo info)
     {
         
-        return Resources.Load<Sprite>("Synergy/"+info.subType);
+        return Resources.Load<Sprite>("buff/"+info.icon);
     }
 
     public static Sprite GetPopupMessageSprite(string identifier)
