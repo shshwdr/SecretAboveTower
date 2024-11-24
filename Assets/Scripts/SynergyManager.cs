@@ -20,7 +20,13 @@ public class SynergyManager : Singleton<SynergyManager>
         pairs = pairs.OrderByDescending(pair => pair.Value.Count).ToList();
         foreach (var pair in pairs)
         {
-            synergyLevels[pair.Key] = level(pair.Key,pair.Value.Count);
+            var newLevel = level(pair.Key,pair.Value.Count);
+            if (!synergyLevels.ContainsKey(pair.Key) || synergyLevels[pair.Key] != newLevel)
+            {
+                
+                synergyLevels[pair.Key] = newLevel;
+                UpgradeLevel(pair.Key,newLevel);
+            }
         }
     }
 
@@ -32,6 +38,12 @@ public class SynergyManager : Singleton<SynergyManager>
     public string GetNextLevel(string synergy)
     {
         return synergyNextLevels.GetValueOrDefault(synergy, amountToUpgrade[0].ToString());
+    }
+
+    void UpgradeLevel(string key, int level)
+    {
+        var info = CSVLoader.Instance.synergyInfoDict[key];
+        BuffManager.Instance.AddBuff(info.buff,level);
     }
     
     int level(string synergy, int value)

@@ -32,6 +32,7 @@ public class BuffInfo
     public string identifier => type + subType;
     public string desc;
     public bool canDraw;
+    public string icon;
 }
 
 public class MilestoneInfo
@@ -49,6 +50,15 @@ public  class DeckInfo
     public Dictionary<string,int> cards;
 }
 
+public class SynergyInfo
+{
+public  string identifier;
+public string name;
+public string description;
+public List<int> values;
+public string buff;
+}
+
 public class CSVLoader : Singleton<CSVLoader>
 {
     public Dictionary<string, BuildingInfo> buildingInfoDict = new Dictionary<string, BuildingInfo>();
@@ -56,6 +66,7 @@ public class CSVLoader : Singleton<CSVLoader>
     public Dictionary<string, TimerInfo> timerDict = new Dictionary<string, TimerInfo>();
     public Dictionary<string, BuffInfo> buffInfoDict = new Dictionary<string, BuffInfo>();
     public Dictionary<string, SkyObjectInfo> skyObjectInfoDict = new Dictionary<string, SkyObjectInfo>();
+    public Dictionary<string, SynergyInfo> synergyInfoDict = new Dictionary<string, SynergyInfo>();
 public List<MilestoneInfo> milestones;
     public void Init()
     {
@@ -81,6 +92,11 @@ public List<MilestoneInfo> milestones;
         foreach (var info in skyObjectInfos)
         {
             skyObjectInfoDict[info.identifier] = info;
+        }
+        var synergyInfos = CsvUtil.LoadObjects<SynergyInfo>("synergy");
+        foreach (var info in synergyInfos)
+        {
+            synergyInfoDict[info.identifier] = info;
         }
     }
 }

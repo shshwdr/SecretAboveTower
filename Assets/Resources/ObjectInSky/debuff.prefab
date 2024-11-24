@@ -118,6 +118,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: c8996b4044d477e4fa801d73d8b4cc5e, type: 3}
+    - target: {fileID: 96335644911610140, guid: aee87f948d6ef6e45af345c6cef56c98, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2242040193510835493, guid: aee87f948d6ef6e45af345c6cef56c98, type: 3}
       propertyPath: m_Name
       value: debuff
@@ -128,7 +132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4977113571899572806, guid: aee87f948d6ef6e45af345c6cef56c98, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5750432817509564406, guid: aee87f948d6ef6e45af345c6cef56c98, type: 3}
       propertyPath: m_LocalPosition.x

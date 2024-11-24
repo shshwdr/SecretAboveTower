@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class BuffView : MonoBehaviour
+public class BuffView : Singleton<BuffView>
 {
 
     public List<BuffCell> cells;

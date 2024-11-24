@@ -16,6 +16,8 @@ public class BuffManager : Singleton<BuffManager>
         {
             buffs.Add(name,value);
         }
+
+        BuffView.Instance.UpdateView();
     }
 
     public List<BuffInfo> GetAllDrawableBuffs()
