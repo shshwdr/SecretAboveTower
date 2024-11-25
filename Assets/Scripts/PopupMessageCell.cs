@@ -23,7 +23,7 @@ public class PopupMessageCell : MonoBehaviour
             switch (message.messageType)
             {
                 case PopupMessageType.SelectBuilding:
-                    FindObjectOfType<SelectCardMenu>().Show();
+                    FindObjectOfType<SelectCardMenu>().Show(message.title);
                     break;
                 case PopupMessageType.SelectBuff:
                     FindObjectOfType<SelectBuffMenu>().Show(message.title);

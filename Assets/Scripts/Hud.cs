@@ -20,7 +20,14 @@ public class Hud : Singleton<Hud>
     public ProgressBar nextPayProgress;
     public ProgressBar nextHarvestProgress;
 
-    
+    private int nextPayValue =0;
+
+    private int nextHarvestValue = 0;
+
+    public void UpdateNextHarvestValue()
+    {
+        
+    }
     //public Transform synergiesParent;
     // Start is called before the first frame update
     void Start()

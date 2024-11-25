@@ -4,7 +4,7 @@ using UnityEngine;
 [Serializable]
 public class Timer
 {
-    public float Duration { get; private set; }
+    public float Duration { get;  set; }
     public float TimeRemaining { get; private set; }
     public bool IsRunning { get; private set; }
     private TimerInfo info;

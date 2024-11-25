@@ -7,7 +7,7 @@ public class MilestoneManager : Singleton<MilestoneManager>
     public GameObject milstoneGO;
 
     private int currentMilestoneIndex = 0;
-
+    public int FinishedMilestone => currentMilestoneIndex;
     private int currentMaxHeight = -999;
     
     // Start is called before the first frame update

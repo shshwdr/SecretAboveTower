@@ -31,7 +31,7 @@ public class BuildingCell : MonoBehaviour, IPointerDownHandler
         buildingPrefab = building.gameObject;
         if (info.image != null && info.image != "")
         {
-            shape.sprite = Resources.Load<Sprite>("BuildingsSprite/"+info.image);
+            shape.sprite = SpriteUtils.GetBuildingSprite(info);
         }
         //shapeSupport.sprite = building.shapeSupport.sprite;
         //building.building.sprite = building.building.sprite;

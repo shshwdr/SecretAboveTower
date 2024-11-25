@@ -7,6 +7,14 @@ public class BuildingManager : Singleton<BuildingManager> // Start is called bef
     List< Building> buildings = new List<Building>();
     public Dictionary<string, List<Building>> synergyToBuildings = new Dictionary<string, List<Building>>();
 
+    public List<Building> FindAllBuildingsWithSynergy(string synergy)
+    {
+        if (!synergyToBuildings.ContainsKey(synergy))
+        {
+            return new List<Building>();
+        }
+        return synergyToBuildings[synergy];
+    }
     public void AddBuilding(Building building)
     {
         
@@ -31,13 +39,24 @@ public class BuildingManager : Singleton<BuildingManager> // Start is called bef
         
         SynergyView.Instance.UpdateView();
         MilestoneManager.Instance.CheckMilestone(building.occupiedCells);
+
+        if (building.info.synergyBK == "tree" &&  BuffManager.Instance.canGetAnotherBuilding())
+        {
+            PopupMessageManager.Instance.AddMessage(new PopupMessageData(){messageType= PopupMessageType.SelectBuilding,title = "Tree Synergy Works! You Get A New Building!"});
+        }
+
+        if (building.info.actions.Contains("payTimeIncrease"))
+        {
+            TimerManager.Instance.timers[TimerType.ConsumeResource].Duration += 1;
+        }
     }
 
     public void TriggerAllBuildings()
     {
+        ScoreRecordManager.Instance.ClearScore();
         foreach (var building in buildings)
         {
-            building.Trigger();
+            building.Harvest();
         }
     }
 

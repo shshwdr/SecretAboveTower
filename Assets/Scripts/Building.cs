@@ -35,9 +35,60 @@ public class Building : MonoBehaviour,IHoverable
         
         effects.Add(effect);
     }
-    public void Trigger()
+
+    public int HarvestValue()
     {
-        function?.Trigger();
+        //function?.Trigger();
+        var happiness = info.baseHappy;
+
+        int value = 0;
+        if (info.actions.Count > 1)
+        {
+
+            int.TryParse(info.actions[1], out value);
+        }
+
+        switch (info.actions[0])
+        {
+            case "nextToAny":
+                var adjacentBuildings = GridManager.Instance.AdjacentBuildings(this);
+                happiness += value * adjacentBuildings.Count;
+                break;
+            
+            case "finishedMilestone":
+                var finishedMilestone = MilestoneManager.Instance.FinishedMilestone;
+                happiness += value * finishedMilestone;
+                break;
+            case "randomNeighbourHarvest":
+                adjacentBuildings = GridManager.Instance.AdjacentBuildings(this);
+                List<Building> candidates = new List<Building>();
+                foreach (var building in adjacentBuildings)
+                {
+                    if (building.info.identifier != info.identifier)
+                    {
+                        candidates.Add(building);
+                    }
+                }
+
+                if (candidates.Count > 0)
+                {
+                    happiness += candidates.RandomItem().HarvestValue();
+                }
+                break;
+            case "constructionCount":
+                happiness += BuildingManager.Instance.FindAllBuildingsWithSynergy("construction").Count * value;
+                break;
+        }
+
+        return happiness;
+    }
+    
+    public void Harvest()
+    {
+        var happiness = HarvestValue();
+        
+        ResourceManager.Instance.AddGold(transform,happiness);
+        ScoreRecordManager.Instance.AddScore(this, happiness);
     }
     
     private void Awake()

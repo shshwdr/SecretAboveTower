@@ -221,7 +221,7 @@ public class TimerManager : Singleton<TimerManager>
             switch (type)
             {
                 case TimerType.DrawCard:
-                    PopupMessageManager.Instance.AddMessage(new PopupMessageData(){messageType= PopupMessageType.SelectBuilding});
+                    PopupMessageManager.Instance.AddMessage(new PopupMessageData(){messageType= PopupMessageType.SelectBuilding,title = "You Get A New Building"});
                    // FindObjectOfType< SelectCardMenu>().Show();
                     break;
                 case TimerType.TriggerBuilding:

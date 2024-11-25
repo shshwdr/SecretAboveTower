@@ -20,4 +20,9 @@ public static class SpriteUtils
         
             return Resources.Load<Sprite>("popupMessage/"+identifier);
     }
+
+    public static Sprite GetBuildingSprite(BuildingInfo info)
+    {
+        return Resources.Load<Sprite>("BuildingsSprite/" + info.image);
+    }
 }

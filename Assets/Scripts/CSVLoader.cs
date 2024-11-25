@@ -14,6 +14,9 @@ public class BuildingInfo
     public string prefab;
     public string description;
     public string image;
+    public int baseHappy;
+    public List<string> actions;
+
 }
 public class TimerInfo
 {
@@ -33,6 +36,7 @@ public class BuffInfo
     public string desc;
     public bool canDraw;
     public string icon;
+    public List<int> values;
 }
 
 public class MilestoneInfo

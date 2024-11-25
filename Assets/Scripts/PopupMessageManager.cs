@@ -25,7 +25,7 @@ public class PopupMessageManager : Singleton<PopupMessageManager>
 
     private void Start()
     {
-        AddMessage((new PopupMessageData(){messageType = PopupMessageType.SelectBuilding}));
+        AddMessage((new PopupMessageData(){messageType = PopupMessageType.SelectBuilding,title = "You Get A New Building"}));
     }
 
     public void AddMessage(PopupMessageData data)

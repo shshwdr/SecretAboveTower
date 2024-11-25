@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class BuffManager : Singleton<BuffManager>
 {
@@ -18,6 +20,35 @@ public class BuffManager : Singleton<BuffManager>
         }
 
         BuffView.Instance.UpdateView();
+    }
+
+    int GetBuffValue(string key)
+    {
+        var level = buffs.GetValueOrDefault(key, 0);
+
+        if (level <= 0)
+        {
+            return 0;
+        }
+
+        level -= 1;
+        var buffInfo = CSVLoader.Instance.buffInfoDict[key];
+        var values = buffInfo.values;
+        level = math.min(level, values.Count - 1);
+        return  values[level];
+    }
+
+    public bool canGetAnotherBuilding()
+    {
+        if (buffs.ContainsKey("chanceGetAnotherBuilding"))
+        {
+            if (Random.Range(0, 100) < GetBuffValue("chanceGetAnotherBuilding"))
+            {
+                 return true;
+            }
+        }
+
+        return false;
     }
 
     public List<BuffInfo> GetAllDrawableBuffs()

@@ -8,6 +8,7 @@ public class GridManager : Singleton<GridManager>
 {
     private Dictionary<Vector2Int, bool> grid; // 用于存储网格占用状态
     private Dictionary<Vector2Int, SkyObject> gridToGo; // 用于存储网格占用状态
+    private Dictionary<Vector2Int, Building> gridToBuilding; // 用于存储网格占用状态
     public float cellSize = 1f; // 每个网格单元的大小
     public GameObject prefab; // 用于获取 prefab 的大小
     public GameObject destroyPrefab;
@@ -56,11 +57,12 @@ public class GridManager : Singleton<GridManager>
         }
     }
 
-    public void OccupyCell(Vector2Int cellIndex)
+    public void OccupyCell(Vector2Int cellIndex,Building building)
     {
         if (!grid.ContainsKey(cellIndex))
         {
             grid[cellIndex] = true; // 标记为占用
+            gridToBuilding[cellIndex] = building;
             //gridToGo[cellIndex] = go;
         }
     }
@@ -298,7 +300,7 @@ public class GridManager : Singleton<GridManager>
         foreach (var pos in occupiedCells)
         {
             
-            OccupyCell(pos);
+            OccupyCell(pos,building);
         }
         
 
@@ -319,7 +321,7 @@ public class GridManager : Singleton<GridManager>
                     
                     PopupMessageManager.Instance.AddMessage(new PopupMessageData(){messageType= PopupMessageType.SelectBuff,title = "People encountered the legendary Sky Castle and received its blessings."});
                     //FindObjectOfType<SelectBuffMenu>().Show("People encountered the legendary Sky Castle and received its blessings.");
-                    OccupyCell(tile);
+                    OccupyCell(tile,null);
                     
                     var go = Instantiate(Resources.Load<GameObject>("ObjectInSky/goodCastle"));
                     go.transform.position = gridToGo[tile].transform.position;
@@ -386,5 +388,28 @@ public class GridManager : Singleton<GridManager>
         res =  res.Distinct().ToList();
 
         return res;
+    }
+    
+    public List<Building> AdjacentBuildings(Building building,int distance = 1)
+    {
+        var res = new List<Vector2Int>();
+        foreach (var pos in building.occupiedCells)
+        {
+            res.AddRange((AdjacentTiles(pos,distance)));
+        }
+        //remove duplicate in res
+        res =  res.Distinct().ToList();
+
+        var buildings = new List<Building>();
+        foreach (var pos in res)
+        {
+            if (gridToBuilding.ContainsKey(pos) && gridToBuilding[pos] != null)
+            {
+                buildings.Add(gridToGo[pos].GetComponent<Building>());
+            }
+        }
+        
+        buildings =  buildings.Distinct().ToList();
+        return buildings;
     }
 }

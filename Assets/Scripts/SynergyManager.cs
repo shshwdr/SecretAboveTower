@@ -65,8 +65,12 @@ public class SynergyManager : Singleton<SynergyManager>
         {
             synergyNextLevels[synergy] = "MAX";
         }
+        else
+        {
+            
+            synergyNextLevels[synergy] = amountToUpgrade[level].ToString();
+        }
 
-        synergyNextLevels[synergy] = amountToUpgrade[level].ToString();
         
         return level;
     }

@@ -1,19 +1,19 @@
-﻿type,subType,desc,canDraw,icon
-synergyHappinessIncrease,tree,tree building get +1 happiness,1,HappyForestIcon
-synergyHappinessIncrease,sea,sea building get +1 happiness,1,HappySeasideIcon
-synergyHappinessIncrease,sail,sail building get +1 happiness,1,HappyWindblownIcon
-synergyHappinessIncrease,food,food building get +1 happiness,1,HappyFoodIcon
-synergyHappinessIncrease,light,light building get +1 happiness,1,HappyLightIcon
-synergyHappinessIncrease,navi,navi building get +1 happiness,1,HappyNavigationIcon
-synergyHappinessIncrease,construction,construction building get +1 happiness,1,HappyConstructionIcon
-synergyHappinessIncrease,entertaining,entertaining building get +1 happiness,1,HappyEntertainmentIcon
-synergyHappinessIncrease,magic,magic building get +1 happiness,1,HappyMagicIcon
-chanceGetAnotherBuilding,,"When you build a tree building, there is {0}% you get another building",,ExtraForestBuildingIcon
-decreaseBuildingDestroyChance,,decrease the chance a building get destroyed,,DestructionDownIcon
-IncreaseFlyingCreature,,Increase the {0}% a flying creature and castle in the sky spawn,,CreaturesUpIcon
-allHappinessIncrease,,Increase happiness generation for each food building,,GainMoneyTimeIcon
-removeMoreFog,,"When you build a Lighting building, the fog around the building will be eliminated more",,FogDownIcon
-milestone,,gives you more buff when hit the milestone,,MilestoneUpIcon
-consturctionBuildingGetMore,,"When you build any tower, all construction building get extra {0} happiness",,BuildingHappinessIcon
-doubleHappiness,,"For all building, when generate happiness, it has 50% chance to generate x{0}",,DoubleHappinessIcon
-reduceProductionTime,,Reduce resource production time {0} second,,TimeDownIcon
+﻿type,subType,desc,canDraw,values,icon
+synergyHappinessIncrease,tree,tree building get +1 happiness,1,,HappyForestIcon
+synergyHappinessIncrease,sea,sea building get +1 happiness,1,,HappySeasideIcon
+synergyHappinessIncrease,sail,sail building get +1 happiness,1,,HappyWindblownIcon
+synergyHappinessIncrease,food,food building get +1 happiness,1,,HappyFoodIcon
+synergyHappinessIncrease,light,light building get +1 happiness,1,,HappyLightIcon
+synergyHappinessIncrease,navi,navi building get +1 happiness,1,,HappyNavigationIcon
+synergyHappinessIncrease,construction,construction building get +1 happiness,1,,HappyConstructionIcon
+synergyHappinessIncrease,entertaining,entertaining building get +1 happiness,1,,HappyEntertainmentIcon
+synergyHappinessIncrease,magic,magic building get +1 happiness,1,,HappyMagicIcon
+chanceGetAnotherBuilding,,"When you build a tree building, there is {0}% you get another building",,30|100,ExtraForestBuildingIcon
+decreaseBuildingDestroyChance,,decrease {0}% chance a building get destroyed,,100,DestructionDownIcon
+IncreaseFlyingCreature,,Increase the {0}% a flying creature and castle in the sky spawn,,100,CreaturesUpIcon
+allHappinessIncrease,,Increase {0} happiness generation for each food building,,1,GainMoneyTimeIcon
+removeMoreFog,,"When you build a Lighting building, the fog around the building will be eliminated {0} more",,1,FogDownIcon
+milestone,,gives you {0} more buff when hit the milestone,,1,MilestoneUpIcon
+consturctionBuildingGetMore,,"When you build any tower, all construction building get extra {0} happiness",,1,BuildingHappinessIcon
+doubleHappiness,,"For all building, when generate happiness, it has 50% chance to generate {0} more times",,1,DoubleHappinessIcon
+reduceProductionTime,,Reduce resource production time {0} second,,1,TimeDownIcon

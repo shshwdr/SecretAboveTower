@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -10,6 +11,10 @@ public class SelectCardMenu : MenuBase
     public List<BuildingSelectionCell> buildingCells = new List<BuildingSelectionCell>();
     public Button refreshButton;
     public Button skipButton;
+
+    public TMP_Text title;
+    public TMP_Text desc;
+    
 
     protected override void Start()
     {
@@ -24,11 +29,13 @@ public class SelectCardMenu : MenuBase
         //     Hide();
         // });
     }
-    public override void Show(bool immediate = false)
+    public  void Show(string tile , bool immediate = false)
     {
+        this.title.text = tile;
         base.Show(immediate);
         Refresh();
         SFXManager.Instance.PlayCardSelection();
+        
     }
 
     void Refresh()
